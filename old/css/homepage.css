@@ -1,0 +1,50 @@
+/* Homepage
+-------------------------------------------------- */
+
+body.home > .navbar {
+  box-shadow: none;
+  background: none;
+}
+
+body.home > .carousel {
+  top: -60px;
+}
+
+body.home > .navbar .nav > li > a {
+  color: #ffffff;
+}
+
+body.home > .navbar .nav > li > .glyphicon-map-marker {
+  color: #ffffff;
+}
+
+  /* Features grid
+  -------------------------------------------------- */
+  .features .span6 {
+    margin-bottom: 40px;
+  }
+  .features .span6 > p, .features .span6 > h3 {
+    margin-left: 98px;
+  }
+  .features .span6 p {
+    padding-right: 30px;
+  }
+  .features .span6 i {
+    float: left;
+    height: 64px;
+    width: 80px;
+    margin: 0;
+    background: url("../img/home-features.png") no-repeat; 
+  }
+    .features .span6 i.discover {
+      background-position: 16px 6px; 
+    }
+    .features .span6 i.social {
+      background-position: 10px -135px;
+    }
+    .features .span6 i.recommend {
+      background-position: 0 -59px;
+    }
+    .features .span6 i.purchase {
+      background-position: 12px -200px;
+    }

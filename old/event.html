@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GoTag</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/overrides.css" rel="stylesheet">
+    <link href="css/events.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="app">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <img src="img/logo-150.png" width="90" class="navbar-brand">
+        <div class="nav-collapse collapse">
+          <ul class="nav pull-right">
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Event Partners</a></li>
+            
+            <li><a href="#">Log in</a></li>
+            <li class="active"><a href="#">Sign up</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div id="projectwrap_2">
+    	<div class="container">
+    	<br>
+    	<br>
+    	<h2>Forever Fridays</h2>
+    	<div class="row">
+    		<br>
+    		<div class="span4">
+    			<div align="center" class="span5">
+          <img alt="Large_forever_logo_2" src="img/large_FOREVER_Logo_2.jpg">
+          </div>
+    		</div><!-- span4 -->
+      
+    		<div class="span6">
+    			<ul class="nav nav-tabs" id="myTab">
+            <li class="active"><a href="#description" data-toggle="tab">Description</a></li>
+            <li><a href="#place" data-toggle="tab">Time &amp; Place</a></li>
+            <li><a href="#coming" data-toggle="tab">Who is Coming</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane" id="description">
+              <p>
+      			    Friday 15th March</br>
+                Venue/Location: Second Bridge</br>
+                Doors: 22:00 till 03:00</br>
+              <p>
+            </div>
+            <div class="tab-pane active" id="place">
+              <h3>Venue Information</h3>
+              <p>
+                <b>Second Bridge</b>
+                <br>10 Manvers Street<br>
+                Bath
+                <br>BA1 1PQ<br>
+                01225 464449
+              </p>
+            </div>
+          </div>
+    			  
+    		</div><!-- span6 -->
+      
+    	</div><!-- row -->
+    	<br>
+    	<hr>
+    	<form accept-charset="UTF-8" action="/purchases" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        <input id="promoter" name="promoter" type="hidden">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td>
+                General Admission
+              </td>
+              <td>
+                £4
+                <em>+ £0.20 booking fee per ticket</em>
+                <br>
+                <em></em>
+                <br>
+                <em></em>
+              </td>
+              <td class="buylinks">
+      
+                <div id="quantity"><select id="quantity" name="[ticket_types]359[quantity]"><option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option></select></div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <div align="right">
+                    <img alt="Gotag-cards" src="https://gotag-static.s3-eu-west-1.amazonaws.com/assets/gotag-cards-88de37efa66edd0ac5fb2376090f2d15.png">
+                    <img alt="Paypal_express" src="https://gotag-static.s3-eu-west-1.amazonaws.com/assets/payment_gateway_logos/paypal_express-2188c870f7021ad9be6c34e23ce789eb.gif">
+                    <input class="btn btn-green btn-small" name="commit" type="submit" value="Pay Now">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+    	</div><!-- container -->
+    </div>
+    
+    <div id="projectwrap">
+    		<header class="clearfix">
+      		<div class="container">
+      		 	<div class="span12">
+      		 		<div class="boxcolor">
+      				<h1>Forever Fridays</h1>
+      				</div>
+      			</div><!-- span12 -->
+      		</div><!-- container -->
+    		</header>
+    </div>
+    
+    <div id="footerwrap">
+			<div class="container">
+			  <br>
+				<div class="row">
+					<div class="span4">
+					  <img src="img/where.png" alt="" style="margin-bottom:10px;">
+						<br>
+						<h3>Venue Infomation</h3>
+						<h4>Second Bridge</h4>
+						<h4>10 Manvers Street</h4>
+						<h4>Bath</h4>
+						<h4>BA1 1PQ</h4>
+						<h4>01225 464449</h4>
+					</div><!-- span4 -->
+					
+					<div class="span4">
+						<img src="img/twitter.png" alt="">
+ 						<div id="jstwitter" class="clearfix">
+						<p id="twitter_update_list"></p>
+						</div>
+						<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script><!-- Script Needed to load the Tweets -->
+						<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/thesecondbridge.json?callback=twitterCallback2&count=1"></script>
+						<h4>Update by @thesecondbridge</h4>
+					</div><!-- span4 -->
+					
+					<div class="span4">
+						<h3>The fine print</h3>
+						<p>R.O.A.R. [rights of admission reserved]</p>
+            <p>No entry to under 18s unless otherwise specified</p>
+            <p>No admission without a valid ticket</p>
+					</div><!-- span4 -->
+
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- footerwrap -->
+    
+    <div id="map"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&q=las+tablas,+madrid&fb=1&hq=las+tablas,&hnear=0xd42287d383766c9:0xad469cc0ed50997d,Madrid,+Espa%C3%B1a&cid=0,0,15011046097507982567&t=m&iwloc=A&ll=40.421889,-3.713523&spn=0.006295,0.006295&output=embed"></iframe></div>
+    
+    <!-- Placed at the end of the document so the pages load faster -->
+    <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+    <!-- Google Fonts call. Font Used Open Sans & Poly -->
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	  <link href='http://fonts.googleapis.com/css?family=Poly' rel='stylesheet' type='text/css'>
+    
+    $('#myTab').tab();
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/holder/holder.js"></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>

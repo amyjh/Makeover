@@ -1,0 +1,38 @@
+/* Key scaffolding
+-------------------------------------------------- */
+
+body {
+  padding-top: 60px;
+}
+
+body.app {
+  background: #f1f1f1 url(../img/gplaypattern_bg.png);
+}
+
+body.blue {
+  background: #f3f9fd url(../img/blue_cloud_bg.jpg) repeat-x center 30px
+}
+
+body.party {
+  background: url(../img/party_bg.jpg) center 50px no-repeat white;
+}
+
+body > .navbar {
+  background: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+  padding-top: 0.5em;
+  padding-bottom: 0;
+}
+
+h1, h2, h3, h4 blockquote {
+  font-family: 'Arvo',"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.page {
+  background: #fff;
+  padding: 60px 11% 60px;
+  margin: 50px 0 55px 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+}
