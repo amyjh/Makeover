@@ -1,2 +1,136 @@
 /* Key scaffolding - this should contain common overrides to boostrap accross the entire site
 -------------------------------------------------- */
+body {
+  padding-top: 60px;
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 110px;
+  }
+}
+
+/********** HEADER **********/
+.nav > li {
+padding-left: 5px;
+}
+
+.navbar{
+  padding-top:5px;
+}
+
+.navbar-search .search-query {
+padding: 4px 18px;
+}
+input, select, textarea {
+width: 200px;
+}
+
+/********** CAROUSEL **********/
+.carousel-indicators{
+  top:10px;
+  bottom:auto;
+}
+
+.carousel-caption{
+background: 
+rgba(0, 0, 0, 0.75);
+width:100%;
+left:0;
+padding-top:5px;
+padding-bottom:15px;
+}
+
+.carousel-inner .item{
+  height:460px;
+}
+/********** SERVICEWRAP **********/
+
+#servicewrap{
+  padding-top:10px;
+}
+
+#whygotag{
+  text-align:center;
+}
+
+.featureslist .media:first-child {
+margin-top: 15px;
+}
+.featureslist i{
+  /*background-position: 16px 6px;*/
+  float: left;
+  height: 64px;
+  width: 80px;
+  margin: 0;
+  background: url('../img/icon/features.png');
+}
+
+i.discover{
+  background-position: 16px 6px;
+}
+
+i.search{
+  background-position: 12px -195px;
+}
+
+i.social{
+  background-position: 10px -135px;
+}
+
+i.purchase{
+  background-position: 12px -65px;
+}
+/********** FOOTER WRAP **********/
+#footerwrap {
+    width: 100%;
+    background: 
+    rgba(0, 0, 0, 0.95);
+    padding-bottom: 45px;
+    text-align:center;
+    color:#474747;
+}
+
+#footerwrap h2 {
+  text-align:left;
+  margin-left:5px;
+  border-left:10px #357EBD solid;
+  padding-left:3px;
+  margin-bottom:40px;
+  color:#fff;
+}
+
+#footerwrap h3 {
+  font-size: 18px;
+  margin-top:12px;
+  color:#707070;
+}
+
+#footerwrap h4 {
+  margin-top:5px;
+  margin-bottom:5px;
+  font-size: 15px;
+}
+
+#footerwrap .useful a{
+  color:#474747;
+}
+
+#footerwrap .iconbar a {
+  color:transparent;
+}
+
+#footerwrap .iconbar img {
+  width:90px;
+}
+
+#footerwrap .iconbar img{
+  width:50px;
+  opacity:0.4;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#footerwrap .iconbar a:hover img{
+  color:transparent;
+  opacity:1;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+}

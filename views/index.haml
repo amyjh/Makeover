@@ -1,3 +1,90 @@
-%link{ :href => "css/index.css", :media => "all", :rel => "stylesheet" }/
+%link{ :href => "css/index.css", :rel => "stylesheet" }/
 
-hello my name is amy
+#myCarousel.carousel.slide
+  %ol.carousel-indicators.moved
+    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+  / Carousel items
+  .carousel-inner
+    .active.item
+      %img{:alt => "", :src => "img/slide-01.jpg"}/
+      .carousel-caption
+        %h1 Discover Events
+        %p.lead Find all the hottest tickets in your area.
+        %a.btn.btn-primary.btn-large Search Events
+    .item
+      %img{:alt => "", :src => "img/night_city.jpg"}/
+      .carousel-caption
+        %h1 Bought a Ticket?
+        %p.lead Manage it here.
+        %a.btn.btn-primary.btn-large My Tickets
+    .item
+      %img{:alt => "", :src => "img/blurred.jpeg"}/
+      .carousel-caption
+        %h1 Running an Event?
+        %p.lead See how our ticketing platform can help you.
+        %a.btn.btn-primary.btn-large Event Partners
+  / Carousel nav
+  %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+  %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+
+#servicewrap
+  .container
+    %h2 Top Picks
+    .row
+      .col-lg-2
+        %a.thumbnail{:href => "#"}
+          %img{:alt => "", :src => "img/flyer/smut2.png", :height => "150"}/
+      .col-lg-2
+        %a.thumbnail{:href => "#"}
+          %img{:alt => "", :src => "img/flyer/smut2.png", :height => "150"}/
+      .col-lg-2
+        %a.thumbnail{:href => "#"}
+          %img{:alt => "", :src => "img/flyer/smut2.png", :height => "150"}/
+      .col-lg-2
+        %a.thumbnail{:href => "#"}
+          %img{:alt => "", :src => "img/flyer/smut2.png", :height => "150"}/
+      .col-lg-2
+        %a.thumbnail{:href => "#"}
+          %img{:alt => "", :src => "img/flyer/smut2.png", :height => "150"}/
+      .col-lg-2
+        %a.thumbnail{:href => "#"}
+          %img{:alt => "", :src => "img/flyer/smut2.png", :height => "150"}/
+    %br/
+    #whygotag.row
+      .container
+        %h2 Why we think you will love GoTag
+        %p
+          Beautifully simple features that you will actually use.
+    / row
+    %br/
+    .row.featureslist
+      .col-lg-3.media
+        %i.discover.media-object.pull-left
+        .media-body 
+          %h4.media-heading Discover
+          %p Learn what's going on nearby and find new trending events.
+      / col3
+      .col-lg-3.media
+        %i.search.media-object.pull-left
+        .media-body
+          %h4.media-heading Recommendations
+          %p In a new city? Let us suggest you events we think you might like.
+      / col3
+      .col-lg-3.media
+        %i.social.media-object.pull-left
+        .media-body
+          %h4.media-heading Social
+          %p Keep up with your friends by sharing your plans and see where your friends are going.
+      / col3
+      .col-lg-3.media
+        %i.purchase.media-object.pull-left
+        .media-body
+          %h4.media-heading Purchase
+          %p Gone are the days of printing paper e-tickets, purchase your tickets on the go.
+      / col3
+    / row
+    %br/
+  / container
+/ servicewrap

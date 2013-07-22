@@ -4,16 +4,22 @@
     %meta{ :charset => "utf-8" }/
     %title GoTag
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
-    %link{ :href => "css/boostrap.css", :media => "all", :rel => "stylesheet" }/
+    %link{ :href => "css/bootstrap.css", :media => "all", :rel => "stylesheet" }/
+    %link{ :href => "css/icons.css", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "css/overrides.css", :media => "all", :rel => "stylesheet" }/
-    
+
   %body
-  
+    - if request.path == "/"  
+      = haml :"shared/header_homepage"
+    - else
+      = haml :"shared/header"
+
     = yield
     
     = haml :"shared/footer"
     
-    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js" }
+    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js" }
     :javascript
       window.jQuery || document.write("<script src='js/jquery.min.js'>\x3C/script>")
-    %script{ :src => "js/boostrap.js" }
+    %script{ :src => "js/bootstrap.js" }
+    %script{ :src => "js/bootstrap-carousel.js" }
