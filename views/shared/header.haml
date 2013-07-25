@@ -6,15 +6,16 @@
       %span.icon-bar
       %span.icon-bar
     %a.navbar-brand{:href => "/"}
-      %img{:alt => "GoTag Logo", :border => "0", :src => "img/logo-150.png", :width => "90"}/
+      %img{:alt => "GoTag Logo", :border => "0", :src => "img/logo-150.png", :width => "80"}/
     .nav-collapse.collapse
       %ul.nav.navbar-nav
         %li
-          %a{:href => "events"} Find Events
+          %a{:href => "events"} Discover Events
         %li
           %a{:href => "#"} Event Partners
         %li.disabled
-          %a{:href => "#"} Search
+          %form.navbar-search.pull-left
+            %input.search-query{:placeholder => "Where do you want to go?", :type => "text"}/
     %p.navbar-text.pull-right
       Signed in as
       %a.navbar-link{:href => "#"} Amy Hunter

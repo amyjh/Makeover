@@ -1,0 +1,89 @@
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+display: inline-block;
+min-height: none;
+max-width: none;
+line-height: 1;
+}
+
+.carousel-control {
+position: absolute;
+top: 35%;
+}
+
+.carousel-caption {
+position: absolute;
+right: 15%;
+bottom: 160px;
+}
+
+.carousel-inner {
+position: relative;
+width: 100%;
+height: 350px;
+overflow: hidden;
+}
+
+.carousel-control.right {
+right: 20px;
+left: auto;
+}
+/*.ticketwrap {
+width: 100%;
+background: #232121;
+padding-bottom: 45px;
+padding-top: 45px;
+text-align: center;
+}*/
+#infowrap {
+    width: 100%;
+    background: #232121;
+    padding-bottom: 45px;
+    text-align:center;
+}
+
+#infowrap h2 {
+  text-align:left;
+  margin-left:5px;
+  border-left:10px #ec602f solid;
+  padding-left:3px;
+  margin-bottom:40px;
+  color:#fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#infowrap h3 {
+  font-family: 'Open Sans Condensed', sans serif;
+  font-weight:400;
+  font-size:30px;
+  color:#ec602f;
+  text-align:center;
+  margin:5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#infowrap h4 {
+  font-family: 'Open Sans Condensed', sans serif;
+  font-weight:400;
+  font-size:22px;
+  line-height:28px;
+  color:#fff;
+  margin:5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#infowrap p {
+  font-family: 'Open Sans Condensed', sans serif;
+  font-weight:400;
+  font-size:22px;
+  line-height:28px;
+  color:#8a8888;
+  padding-top:50px;
+  margin-bottom:10px;
+  margin:5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.span4 {
+width: 33%;
+float:left;
+}

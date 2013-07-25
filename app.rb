@@ -10,4 +10,5 @@ class App < Sinatra::Base
   get '/events' do
     haml :events
   end
+
 end

@@ -1,3 +1,120 @@
 %link{ :href => "css/events.css", :rel => "stylesheet" }/
-%p
-  test
+!!!
+
+%br
+.row
+  .container
+    .col-lg-9.col-md-12
+      .container
+        %h2 A-List Bath presents...
+        /%img{:alt => "Cover Image", :src => "img/night_city.jpg", :style => "min-width: 714px; min-height:264px; max-width: 841px; max-height:315px;"}/
+        .carousel-inner
+          .active.item
+            %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 841px; height:315px;"}/
+            .carousel-caption{:style => "width: 841px;"}
+              %h1{ :style => "color:#ec602f;"} A-Level Results Party
+              %p.lead 1st June 2013 7:00pm - 2nd June 2013 2:00 am
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+    .col-lg-3.full-length.hidden-sm.col-md-12
+      .container
+        %h4
+          Friends Attending
+      .container
+        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+      .container
+        %h4 Description
+        %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        %a{:href => "#"} read more...
+        %h4 Tags
+  /container
+/row
+.row.ticketwrap
+  .container
+    .col-lg-12
+      %h2 Tickets
+      %ul.nav.nav-tabs.nav-justified
+        %li.active
+          %a{:href => "#"} Ticket Types
+        %li
+          %a{:href => "#"} Time and Place
+        %li
+          %a{:href => "#"} Terms and Conditions
+      %br/
+      .container
+        .col-lg-2
+          %img{:alt => "", :src => "img/flyer/freshers.png", :style => "width: 150px; height:200px;"}/
+        .tab-content.col-lg-10
+          #place.tab-pane.active
+            %table.table.table-bordered
+              %tbody
+                %tr
+                  %td
+                    General Admission
+                  %td
+                    £4
+                    %em + £0.20 booking fee per ticket
+                    %br/
+                    %em
+                    %br/
+                    %em
+                  %td.buylinks
+                    #quantity
+                      %select#quantity{:name => "[ticket_types]359[quantity]"}
+                        %option{:value => "0"} 0
+                        %option{:value => "1"} 1
+                        %option{:value => "2"} 2
+                        %option{:value => "3"} 3
+                        %option{:value => "4"} 4
+                        %option{:value => "5"} 5
+                        %option{:value => "6"} 6
+                %tr
+                  %td{:colspan => "3"}
+                    %div{:align => "right"}
+                      %img{:alt => "Gotag-cards", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/gotag-cards-88de37efa66edd0ac5fb2376090f2d15.png"}/
+                      %img{:alt => "Paypal_express", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/payment_gateway_logos/paypal_express-2188c870f7021ad9be6c34e23ce789eb.gif"}/
+                      %input.btn.btn-green.btn-small{:name => "commit", :type => "submit", :value => "Pay Now"}/
+      %br/
+  /container
+/row
+#infowrap
+  .container
+    %br/
+    .row
+      .span4
+        %img{:alt => "", :src => "img/icon/where.png", :style => "margin-bottom:10px;"}/
+        %br/
+        %h3 Venue Infomation
+        %h4 Second Bridge
+        %h4 10 Manvers Street
+        %h4 Bath
+        %h4 BA1 1PQ
+        %h4 01225 464449
+      / span4
+      .span4
+        %img{:alt => "", :src => "img/icon/twitter2.png"}/
+        #jstwitter.clearfix
+          %p#twitter_update_list
+        %script{:src => "http://twitter.com/javascripts/blogger.js", :type => "text/javascript"}
+        / Script Needed to load the Tweets
+        %script{:src => "http://api.twitter.com/1/statuses/user_timeline/thesecondbridge.json?callback=twitterCallback2&count=1", :type => "text/javascript"}
+        %h4 Update by @thesecondbridge
+      / span4
+      .span4
+        %h3 The fine print
+        %p R.O.A.R. [rights of admission reserved]
+        %p No entry to under 18s unless otherwise specified
+        %p No admission without a valid ticket
+      / span4
+    / row
+  / container
+/ footerwrap
+.row
+  %img{:alt => "", :src => "img/map.jpg", :style=>"width:100%; height:500px;"}/
+/row
