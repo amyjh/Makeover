@@ -11,4 +11,12 @@ class App < Sinatra::Base
     haml :events
   end
 
+  get '/fake' do
+    haml :fake
+  end
+  
+  get '/about' do
+    haml :about
+  end
+
 end
