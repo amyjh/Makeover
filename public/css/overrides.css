@@ -2,6 +2,8 @@
 -------------------------------------------------- */
 body {
   padding-top: 60px;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #f0f0f0;
 }
 @media (max-width: 768px) {
   body {
@@ -12,15 +14,50 @@ body {
 .full-length{
   height:100%;
 }
+
+h1, h2{
+font-family: 'Lato', sans-serif;
+color: #E74C3C;
+}
+
+h3, h4, h5{
+font-family: 'Lato', sans-serif;
+}
+
+p, a {
+font-family: 'Oxygen', sans-serif;
+}
+
 /********** HEADER **********/
+
 .nav > li {
 padding-left: 5px;
 }
 
+.nav li a{
+font-size: 13px;
+font-weight: bold;
+color: #bbc0c2;
+display: block;
+float: left;
+height: 60px;
+line-height: 60px;
+padding: 0 10px;
+border: 1px solid transparent;
+border-top: 0;
+border-bottom: 0;
+text-shadow: 1px 1px 1px #131414;
+font-family: 'Oxygen', sans-serif;
+}
+
+.nav li a:hover {
+color: white;
+text-shadow: 1px 1px 1px #131414
+}
+
 .navbar{
-  padding-top:5px;
-  background: 
-  rgba(0, 0, 0, 0.95);
+  /**padding-top:2px;**/
+  background: rgba(33, 35, 36, 0.95);
 }
 
 .navbar-search {
@@ -48,6 +85,28 @@ input, select, textarea {
 width: 200px;
 }
 
+/* user login / register */
+.user {
+}
+.user a{
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 8px 12px;
+  border: 2px solid #bbc0c2;
+  display: inline-block;
+  color: #bbc0c2;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  text-shadow: 1px 1px 1px #131414
+}
+.user a:hover {
+  background: #bbc0c2;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #131414
+}
+
 /********** CAROUSEL **********/
 .carousel-indicators{
   top:10px;
@@ -58,19 +117,19 @@ width: 200px;
   position: absolute;
   top: 40%;
   left: 15px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 35px;
   margin-top: -20px;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 100;
   line-height: 25px;
-  color: #ffffff;
+  color: #bbc0c2;
   text-align: center;
   background: #222222;
-  border: 3px solid #ffffff;
-  -webkit-border-radius: 23px;
-     -moz-border-radius: 23px;
-          border-radius: 23px;
+  border: 3px solid #bbc0c2;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -143,11 +202,12 @@ i.social{
 i.purchase{
   background-position: 12px -65px;
 }
+
+
 /********** FOOTER WRAP **********/
 #footerwrap {
     width: 100%;
-    background: 
-    rgba(0, 0, 0, 0.95);
+    background: rgba(33, 35, 36, 0.95);
     padding-bottom: 45px;
     text-align:center;
     color:#474747;
@@ -172,6 +232,10 @@ i.purchase{
   margin-top:5px;
   margin-bottom:5px;
   font-size: 15px;
+}
+
+#footerwrap li{
+  display:inline;
 }
 
 #footerwrap .useful a{

@@ -10,12 +10,16 @@
     .nav-collapse.collapse
       %ul.nav.navbar-nav
         %li
-          %a{:href => "events"} Discover Events
+          %a{:href => "events"} Browse
         %li
-          %a{:href => "#"} Event Partners
-        %li.disabled
-          %form.navbar-search.pull-left
-            %input.search-query{:placeholder => "Where do you want to go?", :type => "text"}/
+          %a{:href => "#"} Running an Event?
+        / %li.disabled
+        /   %form.navbar-search.pull-left
+        /     %input.search-query{:placeholder => "Where do you want to go?", :type => "text"}/
+    / %p.navbar-text.pull-right
+    /   Signed in as
+    /   %a.navbar-link{:href => "#"} Amy Hunter
     %p.navbar-text.pull-right
-      Signed in as
-      %a.navbar-link{:href => "#"} Amy Hunter
+      .user.text-right
+        %a.user-login{:href => "/signin"} Log In
+        %a.user-login{:href => "/signin"} Sign Up

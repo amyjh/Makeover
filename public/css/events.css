@@ -1,3 +1,31 @@
+body {
+font-family: 'Oxygen', sans-serif;
+}
+
+h1{
+font-family: 'Cabin Condensed', sans-serif;
+}
+
+h2{
+font-family: 'Cabin Condensed', sans-serif;
+}
+
+h3{
+font-family: 'Oxygen', sans-serif;
+}
+
+h4{
+font-family: 'Oxygen', sans-serif;
+}
+
+h5{
+font-family: 'Oxygen', sans-serif;
+}
+
+p{
+font-family: 'Oxygen', sans-serif;
+}
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
 display: inline-block;
 min-height: none;
@@ -48,31 +76,25 @@ text-align: center;
   padding-left:3px;
   margin-bottom:40px;
   color:#fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #infowrap h3 {
-  font-family: 'Open Sans Condensed', sans serif;
   font-weight:400;
   font-size:30px;
   color:#ec602f;
   text-align:center;
   margin:5px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #infowrap h4 {
-  font-family: 'Open Sans Condensed', sans serif;
   font-weight:400;
   font-size:22px;
   line-height:28px;
   color:#fff;
   margin:5px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #infowrap p {
-  font-family: 'Open Sans Condensed', sans serif;
   font-weight:400;
   font-size:22px;
   line-height:28px;
@@ -80,7 +102,6 @@ text-align: center;
   padding-top:50px;
   margin-bottom:10px;
   margin:5px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .span4 {
