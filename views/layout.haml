@@ -8,6 +8,13 @@
     %link{ :href => "css/icons.css", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "css/overrides.css", :media => "all", :rel => "stylesheet" }/
 
+    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js" }
+    :javascript
+      window.jQuery || document.write("<script src='js/jquery.min.js'>\x3C/script>")
+    %script{ :src => "js/bootstrap.js" }
+    %script{ :src => "js/bootstrap-carousel.js" }
+    %script{ :src => "js/jquery.scrollNav.min.js" }
+
   %body
     - if request.path == "/"  
       = haml :"shared/header_homepage"
@@ -18,8 +25,3 @@
     
     = haml :"shared/footer"
     
-    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js" }
-    :javascript
-      window.jQuery || document.write("<script src='js/jquery.min.js'>\x3C/script>")
-    %script{ :src => "js/bootstrap.js" }
-    %script{ :src => "js/bootstrap-carousel.js" }
