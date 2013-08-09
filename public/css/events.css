@@ -26,6 +26,7 @@ p{
 font-family: 'Oxygen', sans-serif;
 }
 
+/*
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
 display: inline-block;
 min-height: none;
@@ -62,6 +63,56 @@ padding-bottom: 45px;
 padding-top: 45px;
 text-align: center;
 }*/
+
+.row.pagehead {
+  height:330px; 
+  overflow:hidden;
+}
+
+.row.pagehead img {
+  width:100%; 
+  height:100%;"
+}
+
+.row.pagehead h1 {
+  color:#ec602f; 
+  width:100%;
+}
+
+.event-caption {
+  position:absolute; 
+  bottom:50px; 
+  text-align:center; 
+  left:40%;
+  background: rgba(0, 0, 0, 0.75);
+  padding-left:15px;
+  padding-right:15px;
+}
+
+a.thumbnail.flyer{
+  height:300px;
+  width:200px;
+  text-align:center;
+  margin-bottom:5px;
+  position:absolute;
+  top:-100px;
+  left:25%;
+}
+
+a.thumbnail.flyer img{
+  height:100%;
+  width:100%;
+}
+
+.mainfeed{
+  background:white;
+}
+
+
+
+
+
+
 #infowrap {
     width: 100%;
     background: #232121;

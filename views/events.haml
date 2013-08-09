@@ -3,48 +3,53 @@
 %br
 .row
   .container
-    .col-lg-9.col-md-12
-      .container
-        %h2 A-List Bath presents...
+    .col-lg-12.col-md-12
+      / %h2 A-List Bath presents...
+      .row.pagehead
         /%img{:alt => "Cover Image", :src => "img/night_city.jpg", :style => "min-width: 714px; min-height:264px; max-width: 841px; max-height:315px;"}/
-        .carousel-inner
-          .active.item
-            %img{:alt => "", :src => "img/street.jpg", :style => "width: 841px; height:315px;"}/
-            .carousel-caption{:style => "width: 841px;"}
-              %h1{ :style => "color:#ec602f;"} A-Level Results Party
-              %p.lead 1st June 2013 7:00pm - 2nd June 2013 2:00 am
-        / Carousel nav
-        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
-        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+        .event-caption
+          %h1 A-Level Results Party
+          %p.lead 1st June 2013 7:00pm - 2nd June 2013 2:00 am
+        %img{:alt => "", :src => "img/street2.jpg"}/
+    .col-lg-12.mainfeed.demowrap
+      .col-lg-4{:style => "padding-top:200px;"}
+        %a.thumbnail.flyer{:href => "#"}
+          %img{:alt => "", :src => "img/flyer/freshers.png",}
+        .feednavbar
+          %h2 NavBar
+          %h2 NavBar
+          %h2 NavBar
+          %h2 NavBar
+          .container
+            %h2 Friends Attending
+          .container
+            %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+      .col-lg-8
+        %h2.scroll-headline Buy Tickets
+        %p Buy
+        %h2.scroll-headline Details
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        %h2.scroll-headline Event Description
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        %h2.scroll-headline Photos
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        %h2.scroll-headline Map
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        %h2.scroll-headline Social
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     .col-lg-3.full-length.hidden-sm.col-md-12
-      .container
-        %h4
-          Friends Attending
-      .container
-        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-        %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+      
       .container
         %h4 Description
         %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         %a{:href => "#"} read more...
         %h4 Tags
   /container
-/row
-.row.demowrap
-  .container
-    .col-lg-12
-      %h2 Demo
-      .col-lg-3
-        %h3 Test1
-        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      .col-lg-9
-        %h3 Test2
-        %h3 Test1
-        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 /row
 .row.ticketwrap
   .container
@@ -131,4 +136,9 @@
 /row
 
 :javascript
-  $('.demowrap').scrollNav();
+  $('.demowrap').scrollNav({
+    location: "prependTo",
+    locationElem: ".feednavbar",
+    sections: '.scroll-headline',
+    titleText: '',
+  });
