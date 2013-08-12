@@ -64,6 +64,13 @@ padding-top: 45px;
 text-align: center;
 }*/
 
+.main{
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
+  box-shadow: 0 0 4px rgba(0,0,0,.2);
+}
+
+/*************PAGEHEAD*************/
 .row.pagehead {
   height:330px; 
   overflow:hidden;
@@ -79,16 +86,25 @@ text-align: center;
   width:100%;
 }
 
-.event-caption {
-  position:absolute; 
-  bottom:50px; 
-  text-align:center; 
-  left:40%;
-  background: rgba(0, 0, 0, 0.75);
-  padding-left:15px;
-  padding-right:15px;
+.row.pagehead p{
+  color:white; 
 }
 
+#event-caption {
+  position:absolute; 
+  bottom:75px; 
+  text-align:center; 
+  left:38%;
+  background: rgba(0, 0, 0, 0.75);
+  padding-left:25px;
+  padding-right:25px;
+  min-width:500px;
+}
+
+#event-caption .glyphicon {
+  color:white;
+}
+/*************MAINFEED*************/
 a.thumbnail.flyer{
   height:300px;
   width:200px;
@@ -96,7 +112,7 @@ a.thumbnail.flyer{
   margin-bottom:5px;
   position:absolute;
   top:-100px;
-  left:25%;
+  left:20%;
 }
 
 a.thumbnail.flyer img{
@@ -106,14 +122,55 @@ a.thumbnail.flyer img{
 
 .mainfeed{
   background:white;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 25px;
 }
 
+.rightpane{
+  border-left: 1px solid #e7e7e7;
+  height:100%;
+}
+
+.leftpane{
+  background-color: #f0f0f0;
+}
+
+/*************BUY NOW*************/
+
+
+/*************FEED NAV*************/
+
+.feednavbar{
+
+}
+
+.scroll-nav{
+  background: #f0f0f0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+ol.scroll-nav-list{
+  list-style-type: none;
+}
+
+li.scroll-nav-item{
+  text-decoration:none;
+}
+/*************FEED************
 
 
 
 
 
-#infowrap {
+/*************MAP*************/
+
+.mapwrap h2{
+  display:inline-block;
+}
+
+/*#infowrap {
     width: 100%;
     background: #232121;
     padding-bottom: 45px;
@@ -158,4 +215,4 @@ a.thumbnail.flyer img{
 .span4 {
 width: 33%;
 float:left;
-}
+}*/
