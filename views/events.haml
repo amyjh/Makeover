@@ -1,4 +1,6 @@
 %link{ :href => "css/events.css", :rel => "stylesheet" }/
+%script{:src => "http://maps.google.com/maps/api/js?sensor=true", :type => "text/javascript"}
+%script{:src => "http://cdn.jsdelivr.net/gmaps/0.3.1/gmaps.min.js", :type => "text/javascript"}
 
 %br
 .row
@@ -104,7 +106,8 @@
           
       .row.mapwrap
         %h2.scroll-headline Map
-        %img{:alt => "", :src => "img/map.jpg", :style=>"width:100%; height:400px;"}/
+        #map
+        
   /container
 /row
 / #infowrap
@@ -147,3 +150,10 @@
     sections: '.scroll-headline',
     titleText: '',
   });
+  
+  map = new GMaps({
+          div: '#map',
+          lat: 51.375799,
+          lng: -2.359893,
+          enableNewStyle: true
+        });
