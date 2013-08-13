@@ -10,6 +10,10 @@ class App < Sinatra::Base
   get '/events' do
     haml :events
   end
+  
+  get '/events_nav' do
+    haml :events_nav
+  end
 
   get '/fake' do
     haml :fake

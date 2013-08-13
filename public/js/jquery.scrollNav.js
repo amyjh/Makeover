@@ -33,7 +33,7 @@
 		var $sectionArray	= [];
 		var $container		= this;
 		var $sections		= $container.find(settings.sections);
-		var $nav			= $('<nav />', {'class': 'scroll-nav', 'role': 'navigation'});
+		var $nav			= $('<div />', {'class': 'scroll-nav', 'role': 'navigation'});
 
 		// Find the article container and either grab it's id or give it one
 		// Initial setup of the section array
@@ -72,7 +72,7 @@
 
 		var setupNav = function() {
 			var $headline	= $('<span />', {'class': 'scroll-nav-heading', text: settings.titleText});
-			var $list		= $('<ol />', {'class': 'scroll-nav-list'});
+			var $list		= $('<ul />', {'class': 'scroll-nav-list'});
 
 			$.each($sectionArray, function(i) {
 				var $item	= (i === 0) ? $('<li />', {'class': 'scroll-nav-item active ' + this.id}) : $('<li />', {'class': 'scroll-nav-item ' + this.id});

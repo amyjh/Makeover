@@ -151,7 +151,11 @@ a.thumbnail.flyer img{
   margin-top: 10px;
 }
 
-ol.scroll-nav-list{
+.scroll-nav.navbar {
+  top: 50px;
+}
+
+ul.scroll-nav-list{
   list-style-type: none;
 }
 
