@@ -85,12 +85,13 @@
                       %img{:alt => "Gotag-cards", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/gotag-cards-88de37efa66edd0ac5fb2376090f2d15.png"}/
                       %img{:alt => "Paypal_express", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/payment_gateway_logos/paypal_express-2188c870f7021ad9be6c34e23ce789eb.gif"}/
                       %input.btn.btn-blue{:name => "commit", :type => "submit", :value => "Pay Now"}/
-          %h2.scroll-headline Details
-          %p A-List presents...
-          %p Title
-          %p Date
-          %p Time
-          %p Location
+          .well
+            %h2.scroll-headline Details
+            %p A-List presents...
+            %p FRESHERS WEEK 2013
+            %p 1st June 2013 - 2nd June 2013
+            %p 7:00 pm - 2:00am
+            %p Second Bridge, Bath, BA1 2EX
           %h2.scroll-headline Event Description
           %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           %a{:href => "#"} read more...
@@ -98,8 +99,8 @@
           %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           %p General terms and conditions apply
           %a{:href => "#"} GoTag terms and conditions...
-          %h2.scroll-headline Photos
-          %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          / %h2.scroll-headline Photos
+          / %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           %h2.scroll-headline Social
           %p I have friends
           %p Share Links
@@ -150,7 +151,35 @@
     sections: '.scroll-headline',
     titleText: '',
   });
-  
+
+  var $nav = $('.scroll-nav'),
+      $win = $(window),
+      navTop = $nav.offset().top,
+      onTop = false,
+      checkScheduled = false;
+
+  function checkNav() {
+    var top = $win.scrollTop();
+    if(navTop < top && !onTop) {
+      onTop = true;
+      $nav.addClass('navbar navbar-fixed-top');
+      $nav.find('ul').addClass('nav navbar-nav');
+    } else if(navTop >= top && onTop) {
+      $nav.removeClass('navbar navbar-fixed-top');
+      $nav.find('ul').removeClass('nav navbar-nav');
+      onTop = false;
+    }
+  }
+
+  $win.on('scroll', function() {
+    if(!checkScheduled) {
+      checkScheduled = true;
+      setTimeout(function() {
+        checkNav();
+        checkScheduled = false;
+      }, 100);
+    }
+  });  
   map = new GMaps({
           div: '#map',
           lat: 51.375799,

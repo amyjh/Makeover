@@ -23,4 +23,8 @@ class App < Sinatra::Base
     haml :about
   end
 
+  get '/browse' do
+    haml :browse
+  end
+
 end
