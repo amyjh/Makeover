@@ -266,3 +266,31 @@ input, select, textarea {
 font-size: 14.994px;
 font-weight: 500;
 }
+
+
+
+
+a.thumbnail.gldisplay{
+  height:345px; 
+  text-align:center;
+}
+
+a.thumbnail.gldisplay img{
+  height:100%;
+  width:100%;
+}
+
+a.thumbnail.gsdisplay{
+  height:170px; 
+  text-align:center;
+  margin-bottom:5px;
+}
+
+a.thumbnail.gsdisplay img{
+  height:100%;
+  width:100%;
+}
+
+a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
+  margin-bottom:0;
+}

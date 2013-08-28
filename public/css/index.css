@@ -82,8 +82,9 @@ form.navbar-search.large{
   display:inline-block;
 }
 
+
 form.navbar-search.large input.search-query{
-  width: 400px;
+  width: 350px;
   text-align:center;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -97,6 +98,18 @@ form.navbar-search.large input.search-query{
   transition: 0.25s;
   -webkit-backface-visibility: hidden;
   height:45px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  margin-bottom: 6px;
+  padding: 0 4px 0 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.btn.btn-blue {
+  box-shadow: inset #2C3E50 -3px -3px 0px;
 }
 /********** SERVICEWRAP **********/
 
@@ -110,7 +123,7 @@ a.thumbnail.gldisplay{
 }
 
 a.thumbnail.gldisplay img{
-  height:90%;
+  height:100%;
   width:100%;
 }
 
@@ -121,7 +134,7 @@ a.thumbnail.gsdisplay{
 }
 
 a.thumbnail.gsdisplay img{
-  height:80%;
+  height:100%;
   width:100%;
 }
 

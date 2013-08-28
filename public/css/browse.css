@@ -115,8 +115,12 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   font-size: 14px;
 }
 
+.rightpane{
+  padding-left: 0px;
+}
+
 a.thumbnail.gsdisplay {
-  height:280px;
+  height:360px;
   color: #666;
   margin-bottom:10px;
   padding:5px;
@@ -124,7 +128,8 @@ a.thumbnail.gsdisplay {
 
 a.thumbnail.gsdisplay img {
   /*margin-bottom:10px;*/
-  height:200px;
+  height:260px;
+  width: 260px;
 }
 
 .gsdate {
@@ -132,7 +137,7 @@ a.thumbnail.gsdisplay img {
   color: white;
   position: absolute;
   top: 15px;
-  left: 30px;
+  left: 40px;
   padding: 5px 15px;
 }
 
@@ -147,4 +152,13 @@ a.thumbnail.gsdisplay img {
 .gsdisplay p.venue{
   font-size:10px;
   padding-bottom:7px;
+}
+
+.tickets input.btn{
+  position:absolute;
+  width:80%;
+  bottom: 20px;
+  left:50%;
+  margin-left:-40%;
+  text-align:center;
 }
