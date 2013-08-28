@@ -1,0 +1,28 @@
+form{
+  margin-bottom:20px;
+}
+
+.controls select{
+  float:left;
+  margin-right: 5px;
+}
+
+.control-group{
+  width:100%;
+  clear: both; 
+  float: left;
+}
+
+.btn.flbl{
+  width: 140px;
+  margin-left: 155px;
+}
+
+p.flbl a{
+  margin-left: 155px;
+  color: #bdc3c7;
+}
+
+p.flbl {
+  margin-top:10px;
+}

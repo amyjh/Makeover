@@ -1,0 +1,69 @@
+%link{ :href => "css/dashboard.css", :rel => "stylesheet" }/
+
+%br
+.row
+  .container
+    .col-lg-12.col-md-12.boxed.maintitle.content
+      / %h2 A-List Bath presents...
+      %h1 My Dashboard
+.row
+  .container.mainfeed
+    .col-lg-4.contentpage.leftpane
+      .content.acctdetails.boxed
+        .acctimg.thumbnail
+          %img{:alt => "", :src => "img/profile.jpg",}
+        .acctname
+          %h3 Amy Hunter
+          %a{:href => "#"} Edit Profile
+      .content.socialnet.boxed
+        %h3 Social Networks
+        %table.table
+          %tbody
+            %tr
+              %td
+                %img{:alt => "Facebook_icon", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/facebook_icon-2c5eb04d93f640d1a391e49b9343ff0c.png", :width => "20"}/
+              %td
+                Connected as
+                %a{:href => "http://facebook.com/700786849"} 700786849
+              %td
+              %td
+            %tr
+              %td
+                %img{:alt => "Urbantribe_icon", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/urbantribe_icon-e93ecb46e2c6c4cee7a0324b93fb2df8.png", :width => "20"}/
+              %td
+                %a.btn.btn-red.btn-small{:href => "/users/auth/urbantribe"} Connect now
+    .col-lg-8.contentpage.rightpane
+      .alert.alert-block.boxed
+        %button.close{"data-dismiss" => "alert", :type => "button"} ×
+        %h4 Welcome!
+        %p This is your Dashboard, the place to download/print your upcoming tickets, edit your profile and much more.
+      .content.boxed
+        %h3 My Upcoming Tickets
+        .buytable
+          %table.table.table-bordered.table-striped
+            %tbody
+              %tr
+                %td
+                  19 Sep 2013
+                %td
+                  Student ticket
+                %td.printlink
+                  %input.btn.btn-small.btn-blue{:name => "", :type => "submit", :value => "Print"}/
+              %tr
+                %td
+                  24 Nov 2013
+                %td
+                  General Admission
+                %td.printlink
+                  %input.btn.btn-small.btn-blue{:name => "", :type => "submit", :value => "Print"}/
+              %tr
+                %td
+                  29 Nov 2013
+                %td
+                  Earlybird
+                %td.printlink
+                  %input.btn.btn-small.btn-blue{:name => "", :type => "submit", :value => "Print"}/
+      .content.alertbox.boxed
+        %h3 News Feed
+
+%br

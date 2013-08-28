@@ -1,0 +1,43 @@
+%link{ :href => "css/tickets.css", :rel => "stylesheet" }/
+
+%br
+.row
+  .container
+    .col-lg-12.col-md-12.boxed.maintitle.content
+      / %h2 A-List Bath presents...
+      %h1 My Tickets
+.row
+  .container.mainfeed
+    .contentpage.fulltpane
+      .alert.alert-block.boxed
+        %button.close{"data-dismiss" => "alert", :type => "button"} ×
+        %h4 Welcome!
+        %p These are your upcoming tickets, please download and print your tickets ready for inspection upon arrival at your event.
+      .content.boxed
+        %h3 My Upcoming Tickets
+        .buytable
+          %table.table.table-bordered.table-striped
+            %tbody
+              %tr
+                %td
+                  19 Sep 2013
+                %td
+                  Student ticket
+                %td.printlink
+                  %input.btn.btn-small.btn-blue{:name => "", :type => "submit", :value => "Print"}/
+              %tr
+                %td
+                  24 Nov 2013
+                %td
+                  General Admission
+                %td.printlink
+                  %input.btn.btn-small.btn-blue{:name => "", :type => "submit", :value => "Print"}/
+              %tr
+                %td
+                  29 Nov 2013
+                %td
+                  Earlybird
+                %td.printlink
+                  %input.btn.btn-small.btn-blue{:name => "", :type => "submit", :value => "Print"}/
+
+%br

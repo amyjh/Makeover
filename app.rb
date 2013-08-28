@@ -27,4 +27,16 @@ class App < Sinatra::Base
     haml :browse
   end
 
+  get '/dashboard' do
+    haml :dashboard
+  end
+
+  get '/tickets' do
+    haml :tickets
+  end
+
+  get '/account' do
+    haml :account
+  end
+
 end

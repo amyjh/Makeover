@@ -294,3 +294,107 @@ a.thumbnail.gsdisplay img{
 a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   margin-bottom:0;
 }
+
+
+/***********CONTENT PAGES************/
+
+.maintitle.content{
+  margin-bottom:20px;
+  padding-top:5px;
+}
+
+.contentpage.leftpane{
+  padding-left:0px;
+}
+
+.contentpage.rightpane{
+  padding-right:0px;
+}
+
+.contentpage.fullpane{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.content{
+  background: white;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:15px;
+  padding-bottom:10px;
+  margin-bottom:10px;
+}
+
+.content h3{
+  font-size: 22px;
+  font-weight:400;
+  -webkit-margin-before: 0.3em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.boxed{
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+  box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+}
+
+
+
+/*********** ACCOUNT INFO ************/
+
+.acctimg.thumbnail{
+  height: 200px;
+  width: 200px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.acctimg img{
+  height: 190px;
+  width: 190px;
+}
+
+.acctname {
+  text-align:center;
+}
+
+.acctname h3{
+  -webkit-margin-before: 0.2em;
+  -webkit-margin-after: 0.1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.acctname a{
+  font-size: 12px;
+}
+
+.socialnet table{
+  font-size:12px;
+}
+
+/*********** TICKETS **********/
+
+.printlink{
+  text-align:center;
+}
+
+/************** FORMS *************/
+
+.form-horizontal .control-label {
+  float: left;
+  width: 140px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+.form-horizontal .controls {
+  margin-left: 160px;
+}
+
+.form-horizontal .control-group {
+  margin-bottom: 18px;
+}
