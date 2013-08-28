@@ -5,18 +5,21 @@
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
-    %a.navbar-brand{:href => "/",}
+    %a.navbar-brand{:href => "/"}
       %img{:alt => "GoTag Logo", :border => "0", :src => "img/logo-150.png", :width => "80"}/
     .nav-collapse.collapse
       %ul.nav.navbar-nav
         %li
-          %a{:href => "events"} Discover Events
+          %a{:href => "browse"} BROWSE
         %li
-          %a{:href => "#"} Event Partners
+          %a{:href => "#"} SELL TICKETS
         / %li.disabled
         /   %form.navbar-search.pull-left
         /     %input.search-query{:placeholder => "Where do you want to go?", :type => "text"}/
+    / %p.navbar-text.pull-right
+    /   Signed in as
+    /   %a.navbar-link{:href => "#"} Amy Hunter
     %p.navbar-text.pull-right
       .user.text-right
-        %a.user-login{:href => "/signin"} Log In
-        %a.user-login{:href => "/signin"} Sign Up
+        %a.user-login{:href => "/signin"} LOG IN
+        %a.user-login{:href => "/signin"} SIGN UP

@@ -11,8 +11,8 @@
         /%img{:alt => "Cover Image", :src => "img/night_city.jpg", :style => "min-width: 714px; min-height:264px; max-width: 841px; max-height:315px;"}/
         #event-caption
           %h1 A-Level Results Party
-          %p.glyphicon.glyphicon-calendar 1st June 2013 7:00pm - 2nd June 2013 2:00 am
-          %p.glyphicon.glyphicon-map-marker Second Bridge, Bath, BA1 2EX
+          %h4.glyphicon.glyphicon-calendar 1st June 2013 @ 7:00pm
+          %h4.glyphicon.glyphicon-map-marker Second Bridge, Bath, BA1 2EX
         %img{:alt => "", :src => "img/street2.jpg"}/
     .col-lg-12.mainfeed.demowrap.main
       .row
@@ -20,15 +20,15 @@
           %a.thumbnail.flyer{:href => "#"}
             %img{:alt => "", :src => "img/flyer/freshers.png",}
           .feednavbar
-            .container
-              %h2 Friends Attending (6)
-            .container
-              %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-              %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-              %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-              %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-              %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-              %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            / .container
+            /   %h2 Friends Attending (6)
+            / .container
+            /   %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            /   %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            /   %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            /   %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            /   %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
+            /   %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
         .col-lg-8.col-md-8.rightpane
           %h2.scroll-headline Tickets
           .buytable
@@ -85,25 +85,34 @@
                       %img{:alt => "Gotag-cards", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/gotag-cards-88de37efa66edd0ac5fb2376090f2d15.png"}/
                       %img{:alt => "Paypal_express", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/payment_gateway_logos/paypal_express-2188c870f7021ad9be6c34e23ce789eb.gif"}/
                       %input.btn.btn-blue{:name => "commit", :type => "submit", :value => "Pay Now"}/
-          .well
-            %h2.scroll-headline Details
-            %p A-List presents...
-            %p FRESHERS WEEK 2013
-            %p 1st June 2013 - 2nd June 2013
-            %p 7:00 pm - 2:00am
-            %p Second Bridge, Bath, BA1 2EX
+          / .well
+          /   %h2.scroll-headline Details
+          /   %p A-List presents...
+          /   %p FRESHERS WEEK 2013
+          /   %p 1st June 2013 - 2nd June 2013
+          /   %p 7:00 pm - 2:00am
+          /   %p Second Bridge, Bath, BA1 2EX
+          %h2.scroll-headline Details
+          %p A-List presents...
+          %p A-Level Results Party
+          %p.glyphicon.glyphicon-calendar 1st June 2013 7:00 pm - 2nd June 2013 2:00am
+          %p.glyphicon.glyphicon-map-marker Second Bridge, Bath, BA1 2EX
           %h2.scroll-headline Event Description
           %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           %a{:href => "#"} read more...
           %h2.scroll-headline Terms and Conditions
           %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           %p General terms and conditions apply
+          %p R.O.A.R. [rights of admission reserved]
+          %p No entry to under 18s unless otherwise specified
+          %p No admission without a valid ticket
           %a{:href => "#"} GoTag terms and conditions...
           / %h2.scroll-headline Photos
           / %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           %h2.scroll-headline Social
           %p I have friends
           %p Share Links
+          %p FB comments
           
       .row.mapwrap
         %h2.scroll-headline Map

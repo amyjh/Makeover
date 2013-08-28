@@ -132,7 +132,7 @@ a.thumbnail.flyer img{
 }
 
 .leftpane{
-  background-color: #f0f0f0;
+  /*background-color: #f0f0f0;*/
 }
 
 /*************BUY NOW*************/
@@ -145,7 +145,7 @@ a.thumbnail.flyer img{
 }
 
 .scroll-nav{
-  background: #f0f0f0;
+  /*background: #f0f0f0;*/
   padding-top: 10px;
   padding-bottom: 5px;
   margin-top: 10px;
@@ -162,6 +162,22 @@ ul.scroll-nav-list{
 li.scroll-nav-item{
   text-decoration:none;
 }
+
+.scroll-nav.navbar-fixed-top li a{
+  color:white;
+  text-shadow: none;
+}
+
+.scroll-nav.navbar-fixed-top ul.scroll-nav-list li.scroll-nav-item.active a.scroll-nav-link{
+  color:white;
+}
+
+.scroll-nav.navbar-fixed-top {
+  background: #666;
+  border-bottom: 1px solid white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 /*************FEED************
 
 
@@ -175,7 +191,7 @@ li.scroll-nav-item{
 }
 
 #map {
-  height: 250px;
+  height: 350px;
 }
 
 /*#infowrap {
