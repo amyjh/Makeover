@@ -101,10 +101,6 @@ input.todo-search-field {
   color: white;
 }
 
-input, select, textarea {
-  width: 160px;
-  color:white;
-}
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #666;

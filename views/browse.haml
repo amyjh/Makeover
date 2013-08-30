@@ -7,7 +7,7 @@
     .col-lg-12.mainfeed.demowrap.main{:style => "margin-bottom:10px;"}
       .row
         .col-lg-4.leftpane
-          .todo.mrm
+          .todo.mrm.boxed
             .todo-search
               %input.todo-search-field{:placeholder => "Search", :type => "search", :value => ""}/
             %ul{:style => "margin-left: -40px;"}
@@ -29,7 +29,7 @@
                     Tags
         .col-lg-8.rightpane
           .col-lg-6
-            %a.thumbnail.gsdisplay{:href => "events"}
+            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
               %img{:alt => "", :src => "img/flyer/boat.jpg",}
               %p Boat Party 2013
               %p.venue Second Bridge
@@ -39,7 +39,7 @@
               .tickets
                 %input.btn.btn-small.btn-red{:name => "commit", :type => "submit", :value => "LIMITED TICKETS"}/
           .col-lg-6
-            %a.thumbnail.gsdisplay{:href => "events"}
+            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
               %img{:alt => "", :src => "img/flyer/freshers.png",}
               %p Freshers Week 2013
               %p.venue Second Bridge
@@ -60,7 +60,7 @@
           /       %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
       .row
         .col-lg-4.leftpane
-          %a.thumbnail.gsdisplay{:href => "events"}
+          %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
             %img{:alt => "", :src => "img/flyer/forever.jpg",}
             %p Forever Fridays
             %p.venue Second Bridge
@@ -71,7 +71,7 @@
               %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
         .col-lg-8.rightpane
           .col-lg-6
-            %a.thumbnail.gsdisplay{:href => "events"}
+            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
               %img{:alt => "", :src => "img/flyer/garden.jpg",}
               %p Bridge Garden Party
               %p.venue Second Bridge
@@ -81,7 +81,7 @@
               .tickets
                 %input.btn.btn-small.btn-red.disabled{:name => "commit", :type => "submit", :value => "SOLD OUT"}/
           .col-lg-6
-            %a.thumbnail.gsdisplay{:href => "events"}
+            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
               %img{:alt => "", :src => "img/flyer/monday.jpg",}
               %p Bridge Mondays
               %p.venue Second Bridge
@@ -102,7 +102,7 @@
           /       %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
       .row
         .col-lg-4.leftpane
-          %a.thumbnail.gsdisplay{:href => "events"}
+          %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
             %img{:alt => "", :src => "img/flyer/mnb.jpg",}
             %p Monday Nights at Bridge
             %p.venue Second Bridge
@@ -113,7 +113,7 @@
               %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
         .col-lg-8.rightpane
           .col-lg-6
-            %a.thumbnail.gsdisplay{:href => "events"}
+            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
               %img{:alt => "", :src => "img/flyer/boat.jpg",}
               %p Boat Party 2013
               %p.venue Second Bridge
@@ -123,7 +123,7 @@
               .tickets
                 %input.btn.btn-small.btn-red.disabled{:name => "commit", :type => "submit", :value => "SOLD OUT"}/
           .col-lg-6
-            %a.thumbnail.gsdisplay{:href => "events"}
+            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
               %img{:alt => "", :src => "img/flyer/sunday.jpg",}
               %p Sunday Project
               %p.venue Second Bridge
