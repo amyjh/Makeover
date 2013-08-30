@@ -154,7 +154,7 @@
 				var elementClicked	= $(this).attr("href");
 				var destination		= $(elementClicked).offset().top;
 
-				$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-65 }, settings.speed );
+				$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-125 }, settings.speed );
 
 				return false;
 			});
