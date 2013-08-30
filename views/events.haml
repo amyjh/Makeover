@@ -128,7 +128,10 @@
     sections: '.scroll-headline',
     titleText: '',
   });
-
+  
+  // Move tickets nav item to end
+  $('a:contains("Tickets")').appendTo(".scroll-nav-list").addClass("buy-tickets-nav-btn");
+  
   var $nav = $('.scroll-nav'),
       $win = $(window),
       navTop = $nav.offset().top,
