@@ -17,7 +17,7 @@
 		var settings = {
 			sections: 'h3',
 			titleText: 'Scroll To',
-			fixedMargin: 40,
+			fixedMargin: 120,
 			animated: true,
 			speed: 500,
 			showHeadline: true,
