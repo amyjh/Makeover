@@ -1,7 +1,7 @@
 / Fixed navbar
 .navbar.navbar-fixed-top
   .container
-    .row
+    .row.header
       .col-lg-12
         %a.navbar-toggle{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
           %span.icon-bar
@@ -15,16 +15,10 @@
               %a{:href => "browse"} BROWSE
             %li
               %a{:href => "#"} SELL TICKETS
-            %li.searchbar
-              .btn.glyphicon.glyphicon-search
-              %input#EventKeywords.search_events_input{:name => "data[Event][keywords]", :placeholder => "What are you looking for?...", :type => "text"}/
-            / %li.disabled
-            /   %form.navbar-search.pull-left
-            /     %input.search-query{:placeholder => "Where do you want to go?", :type => "text"}/
-        / %p.navbar-text.pull-right
-        /   Signed in as
-        /   %a.navbar-link{:href => "#"} Amy Hunter
-        %p.navbar-text.pull-right
+        .searchbar
+          .btn.glyphicon.glyphicon-search
+          %input#EventKeywords.search_events_input{:name => "data[Event][keywords]", :placeholder => "What are you looking for?...", :type => "text"}/
+        .navbar-text.pull-right
           .userli.text-right
             %a.profpic{:href => "account"}
               %img{:alt => "User Profile Picture", :border => "0", :src => "img/profile.jpg",}/

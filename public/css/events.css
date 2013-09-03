@@ -1,73 +1,78 @@
 body {
-font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 h1{
-font-family: 'Cabin Condensed', sans-serif;
+  /*font-family: 'Cabin Condensed', sans-serif;*/
+  font-family: 'Lato', sans-serif;
 }
 
 h2{
-font-family: 'Cabin Condensed', sans-serif;
-}
+  font-family: 'Lato', sans-serif;
+  font-size:22px;
+  font-weight:400;
+  }
 
 h3{
-font-family: 'Oxygen', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-size:16px;
+  font-weight:400;
 }
 
 h4{
-font-family: 'Oxygen', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h5{
-font-family: 'Oxygen', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 p{
-font-family: 'Oxygen', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
-/*
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-display: inline-block;
-min-height: none;
-max-width: none;
-line-height: 1;
+a{
+  font-family: 'Lato', sans-serif;
 }
 
-.carousel-control {
-position: absolute;
-top: 35%;
-}
-
-.carousel-caption {
-position: absolute;
-right: 15%;
-bottom: 160px;
-}
-
-.carousel-inner {
-position: relative;
-width: 100%;
-height: 350px;
-overflow: hidden;
-}
-
-.carousel-control.right {
-right: 20px;
-left: auto;
-}
-/*.ticketwrap {
-width: 100%;
-background: #232121;
-padding-bottom: 45px;
-padding-top: 45px;
-text-align: center;
-}*/
 
 .main{
   -webkit-box-shadow: 0 0 4px rgba(0,0,0,.2);
   -moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
   box-shadow: 0 0 4px rgba(0,0,0,.2);
+}
+
+.well{
+  text-align:center;
+  padding:10px;
+}
+
+.cbox{
+  min-height: 20px;
+  text-align:center;
+  padding:10px;
+  margin-bottom: 10px;
+  /*background-color: #f5f5f5;*/
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.tbox{
+  min-height: 20px;
+  text-align:center;
+  padding:10px;
+  margin-bottom: 10px;
+  /*background-color: #f5f5f5;*/
+  /*border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
+}
+
+.text-left{
+  text-align:left;
 }
 
 /*************PAGEHEAD*************/
@@ -91,35 +96,19 @@ text-align: center;
 }
 
 #event-caption {
-  position:absolute; 
-  bottom:75px; 
+  top:85px; 
   text-align:center; 
-  left:25%;
   background: rgba(0, 0, 0, 0.75);
   padding-left:45px;
   padding-right:45px;
-  min-width:500px;
+  min-width:600px;
+  border: solid 1px black;
 }
 
 #event-caption .glyphicon {
   color:white;
 }
 /*************MAINFEED*************/
-a.thumbnail.flyer{
-  height:200px;
-  width:200px;
-  text-align:center;
-  margin-bottom:5px;
-  position:absolute;
-  top:30px;
-  left:20%;
-}
-
-a.thumbnail.flyer img{
-  height:100%;
-  width:100%;
-}
-
 .mainfeed{
   background:white;
   border: 1px solid #e7e7e7;
@@ -127,7 +116,7 @@ a.thumbnail.flyer img{
 }
 
 .rightpane{
-  border-left: 1px solid #e7e7e7;
+  /*border-left: 1px solid #e7e7e7;*/
   height:100%;
 }
 
@@ -135,14 +124,51 @@ a.thumbnail.flyer img{
   /*background-color: #f0f0f0;*/
 }
 
-/*************BUY NOW*************/
+/*************LEFTPANE*************/
+.flyercontainer{
+  height:100%;
+  margin-top:20px;
+  padding:0px;
+  padding-top:10px;
+}
+
+a.thumbnail.flyer{
+  height:180px;
+  width:180px;
+  text-align:center;
+  margin-bottom:5px;
+  margin-left:auto;
+  margin-right:auto;
+  /*position:absolute;
+  top:30px;
+  left:20%;*/
+}
+
+a.thumbnail.flyer img{
+  height:100%;
+  width:100%;
+}
 
 
+ul.fbgrid {
+  padding: 0;
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom:5px;
+  width: 200px;  
+  }
+
+.fbgrid li {
+  float: left;
+  padding: 0;
+  margin: 0 5px 10px 5px;
+  } 
 /*************FEED NAV*************/
 
 .feednavbar{
   /*position:absolute;
   top:100px;*/
+  display:none;
 }
 
 .scroll-nav{
@@ -222,10 +248,10 @@ ul.scroll-nav-list{
   transition: all 300ms ease;
   text-decoration: none;
 }
-/*************FEED************
+/*************FEED*************/
 
 
-
+/*************BUY NOW************
 
 
 /*************MAP*************/
