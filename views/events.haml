@@ -80,9 +80,9 @@
                     %span.bfee BF
                   %td.buylinks
                     #quantity{:align => "right"}
-                      %input{:name => "subtract", :onclick => "javascript: subtractQty();", :type => "button", :value => "-"}/
+                      %input.decrement{:name => "subtract", :type => "button", :value => "-"}/
                       %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input{:name => "add", :onclick => "javascript: document.getElementById(\"qty\").value++;", :type => "button", :value => "+"}/
+                      %input.increment{:name => "add", :type => "button", :value => "+"}/
                 %tr
                   %td
                     Student
@@ -91,9 +91,9 @@
                     %span.bfee BF
                   %td.buylinks
                     #quantity{:align => "right"}
-                      %input{:name => "subtract", :onclick => "javascript: subtractQty();", :type => "button", :value => "-"}/
+                      %input.decrement{:name => "subtract", :type => "button", :value => "-"}/
                       %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input{:name => "add", :onclick => "javascript: document.getElementById(\"qty\").value++;", :type => "button", :value => "+"}/
+                      %input.increment{:name => "add", :type => "button", :value => "+"}/
                 %tr
                   %td
                     General Admission
@@ -102,9 +102,9 @@
                     %span.bfee BF
                   %td.buylinks
                     #quantity{:align => "right"}
-                      %input#decrement{:name => "subtract", :type => "button", :value => "-"}/
+                      %input.decrement{:name => "subtract", :type => "button", :value => "-"}/
                       %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input#increment{:name => "add", :type => "button", :value => "+"}/
+                      %input.increment{:name => "add", :type => "button", :value => "+"}/
                 %tr.pprow
                   %td{:colspan => "3"}
                     %div{:align => "right"}
@@ -167,9 +167,21 @@
     }
   }
 
-  $('#increment').click(function() {
-    console.dir(this.previousElementSibling())
+  $('.decrement').click(function() {
+    var qtyInput = $($(this).next()[0]);
+    var value = qtyInput.val();
+    if (value > 0) {
+      var newValue = parseInt(value) - 1;
+      qtyInput.val(newValue);
+    }
   })
+
+  $('.increment').click(function() {
+    var qtyInput = $($(this).prev()[0]);
+    var value = qtyInput.val();
+    var newValue = parseInt(value) + 1;
+    qtyInput.val(newValue);
+  });
 
   $win.on('scroll', function() {
     if(!checkScheduled) {
