@@ -103,10 +103,17 @@ a{
   padding-right:45px;
   min-width:600px;
   border: solid 1px black;
+  padding-bottom:10px;
 }
 
 #event-caption .glyphicon {
   color:white;
+}
+
+#event-caption h4 {
+  color:white;
+  display:inline;
+  margin-bottom:10px;
 }
 /*************MAINFEED*************/
 .mainfeed{
@@ -148,7 +155,14 @@ a.thumbnail.flyer img{
   height:100%;
   width:100%;
 }
+.eventsummary h2{
+  margin-top: 0px;
+  color: #333333;
+}
 
+.eventsummary .afterglyph{
+  display:inline;
+}
 
 ul.fbgrid {
   padding: 0;
@@ -166,8 +180,8 @@ ul.fbgrid {
 /*************FEED NAV*************/
 
 .feednavbar{
-  /*position:absolute;
-  top:100px;*/
+  position:absolute;
+  top:100px;
   display:none;
 }
 
@@ -180,6 +194,7 @@ ul.fbgrid {
 
 .scroll-nav.navbar {
   top: 50px;
+  display:none;
 }
 
 
@@ -251,10 +266,46 @@ ul.scroll-nav-list{
 /*************FEED*************/
 
 
-/*************BUY NOW************
+/*************BUY NOW*************/
+.buytable table{
+  margin-bottom:5px;
+}
 
+.buytable tbody tr td{
+  border-top: 0;
+}
 
-/*************MAP*************/
+.buytable thead{
+  border-bottom: solid 1px #e3e3e3;
+}
+
+.buytable thead th{
+  /*color: #666;*/
+}
+
+.buytable span.bfee{
+  display:inline;
+  font-size:10px;
+}
+
+tr.pprow img{
+  height:25px;
+}
+/*.buytable tr.pprow{
+  border-top: solid 2px #ddd;
+}*/
+
+/*.bordered {
+  border: solid #ccc 1px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  /*-webkit-box-shadow: 0 1px 1px #ccc;
+  -moz-box-shadow: 0 1px 1px #ccc;
+  box-shadow: 0 1px 1px #ccc;
+}*/
+
+/************MAP************/
 
 .mapwrap h2{
   display:inline-block;
@@ -309,4 +360,4 @@ ul.scroll-nav-list{
 .span4 {
 width: 33%;
 float:left;
-}*/
+}

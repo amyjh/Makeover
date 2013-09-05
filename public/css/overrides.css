@@ -215,10 +215,12 @@ a.profpic img{
   width: 100%;
   /*background: rgba(35, 35, 36, 1);*/
   /*background: rgba(0, 0, 0, 0.9);*/
-  background: #ddd;
+  /*background: #ddd;*/
+  background: #fbfbfb;
   padding-bottom: 45px;
   text-align:center;
   color:#474747;
+  border-top:solid 1px #ddd;
 }
 
 #footerwrap .container{
@@ -245,17 +247,46 @@ a.profpic img{
 #footerwrap h4 {
   margin-top:5px;
   margin-bottom:5px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 #footerwrap li{
   display:inline;
 }
 
-#footerwrap .useful a{
-  color:#474747;
+#footeerwrap ul.ftitle{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
+#footerwrap ul.ftitle li {
+  float: left;
+  margin-right: 30px;
+  width: 105px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#footerwrap ul.fitems {
+  height: 2em;
+  display: inline-block;
+  margin-top: 10px !important;
+  -webkit-padding-start:0px;
+}
+
+#footerwrap ul.fitems li {
+  float: left;
+  width: 85px;
+  color: #999999;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px;
+  text-transform: none;
+  margin-right:30px;
+}
+
+/*
 #footerwrap .iconbar a {
   color:transparent;
 }
@@ -268,13 +299,12 @@ a.profpic img{
   width:50px;
   opacity:0.4;
   filter:alpha(opacity=40); /* For IE8 and earlier */
-}
+/*}**/
 
-#footerwrap .iconbar a:hover img{
+/*#footerwrap .iconbar a:hover img{
   color:transparent;
   opacity:1;
   filter:alpha(opacity=40); /* For IE8 and earlier */
-}
 
 
 /***********BUTTONS***********/

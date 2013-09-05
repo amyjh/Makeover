@@ -13,8 +13,11 @@
         %div{:style => "position: absolute; left: 50%;"}
           #event-caption{:style => "position: relative; left: -50%;"}
             %h1 A-Level Results Party
-            %h4.glyphicon.glyphicon-calendar 1st June 2013 @ 7:00pm
-            %h4.glyphicon.glyphicon-map-marker Second Bridge, Bath, BA1 2EX
+            %span.glyphicon.glyphicon-calendar
+            %h4 1st June 2013 @ 7:00pm
+            %br
+            %span.glyphicon.glyphicon-map-marker
+            %h4 Second Bridge, Bath, BA1 2EX
         %img{:alt => "", :src => "img/street2.jpg"}/
     .col-lg-12.mainfeed.demowrap.main
       .row
@@ -23,11 +26,15 @@
             %a.thumbnail.flyer{:href => "#"}
               %img{:alt => "", :src => "img/flyer/monday.jpg",}
           .feednavbar
-          .cbox
+          .cbox.eventsummary
             %p A-List presents... 
-            %p A-Level Results Party
-            %p.glyphicon.glyphicon-calendar 1st June 2013 7:00 pm - 2nd June 2013 2:00am
-            %p.glyphicon.glyphicon-map-marker Second Bridge, Bath, BA1 2EX
+            %h2 A-Level Results Party
+            .glyphblock
+              %span.glyphicon.glyphicon-calendar
+              %p.afterglyph 1st June 2013 7:00 pm - 2nd June 2013 2:00am
+            .glyphblock 
+              %span.glyphicon.glyphicon-map-marker 
+              %p.afterglyph Second Bridge, Bath, BA1 2EX
           / .tbox
           /   %h3.text-left Friends Attending (7)
           /   .container
@@ -48,16 +55,29 @@
           /         %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
           .tbox
             .fb-like{"data-href" => "http://developers.facebook.com/docs/reference/plugins/like", "data-layout" => "button_count", "data-send" => "true", "data-show-faces" => "true", "data-width" => "450"}
+            %br
+            %a.twitter-share-button{:href => "https://twitter.com/share"} Tweet
+
         .col-lg-8.rightpane
           %h2.scroll-headline Tickets
-          .buytable
-            %table.table.table-bordered.table-striped
+          .buytable.bordered
+            %table.table
+              %colgroup
+                %col{:span => "1", :style => "width: 50%;"}/
+                %col{:span => "1", :style => "width: 35%;"}/
+                %col{:span => "1", :style => "width: 15%;"}/
+              %thead
+                %tr
+                  %th Ticket Type
+                  %th Price
+                  %th Quantity
               %tbody
                 %tr
                   %td
                     Early Bird
                   %td
-                    £3 + £0.20 BF*
+                    £3 + £0.20 
+                    %span.bfee BF
                   %td.buylinks
                     #quantity{:align => "right"}
                       %select#quantity{:name => "[ticket_types]359[quantity]"}
@@ -72,7 +92,8 @@
                   %td
                     Student
                   %td
-                    £3 + £0.20 BF*
+                    £3 + £0.20
+                    %span.bfee BF
                   %td.buylinks
                     #quantity{:align => "right"}
                       %select#quantity{:name => "[ticket_types]359[quantity]"}
@@ -87,7 +108,8 @@
                   %td
                     General Admission
                   %td
-                    £4 + £0.20 BF*
+                    £4 + £0.20
+                    %span.bfee BF
                   %td.buylinks
                     #quantity{:align => "right"}
                       %select#quantity{:name => "[ticket_types]359[quantity]"}
@@ -98,12 +120,12 @@
                         %option{:value => "4"} 4
                         %option{:value => "5"} 5
                         %option{:value => "6"} 6
-                %tr
+                %tr.pprow
                   %td{:colspan => "3"}
                     %div{:align => "right"}
                       %img{:alt => "Gotag-cards", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/gotag-cards-88de37efa66edd0ac5fb2376090f2d15.png"}/
                       %img{:alt => "Paypal_express", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/payment_gateway_logos/paypal_express-2188c870f7021ad9be6c34e23ce789eb.gif"}/
-                      %input.btn.btn-blue{:name => "commit", :type => "submit", :value => "Pay Now"}/
+                      %input.btn.btn-blue{:name => "commit", :type => "submit", :value => "Purchase"}/
           %h2.scroll-headline Event Description
           %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           %a{:href => "#"} read more...
@@ -118,6 +140,7 @@
           .fb-comments{"data-href" => "http://example.com", "data-width" => "470"}
           %br/
           .fb-like{"data-href" => "http://developers.facebook.com/docs/reference/plugins/like", "data-layout" => "button_count", "data-send" => "true", "data-show-faces" => "true", "data-width" => "450"}
+          %a.twitter-share-button{:href => "https://twitter.com/share"} Tweet
           
       .row.mapwrap
         %h2.scroll-headline Map
@@ -148,14 +171,18 @@
     var top = $win.scrollTop();
     if(navTop < top && !onTop) {
       onTop = true;
+      $nav.show();
       $nav.addClass('navbar navbar-fixed-top');
       $nav.find('ul').addClass('nav navbar-nav');
     } else if(navTop >= top && onTop) {
+      $nav.hide();
       $nav.removeClass('navbar navbar-fixed-top');
       $nav.find('ul').removeClass('nav navbar-nav');
       onTop = false;
     }
   }
+
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
   $win.on('scroll', function() {
     if(!checkScheduled) {
