@@ -285,26 +285,19 @@ ul.scroll-nav-list{
 
 .buytable span.bfee{
   display:inline;
-  font-size:10px;
+  font-size:11px;
 }
 
 tr.pprow img{
   height:25px;
 }
-/*.buytable tr.pprow{
-  border-top: solid 2px #ddd;
-}*/
 
-/*.bordered {
-  border: solid #ccc 1px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  /*-webkit-box-shadow: 0 1px 1px #ccc;
-  -moz-box-shadow: 0 1px 1px #ccc;
-  box-shadow: 0 1px 1px #ccc;
-}*/
 
+/***********SOCIAL**********/
+
+.fb-comments{
+  margin-bottom:10px;
+}
 /************MAP************/
 
 .mapwrap h2{
