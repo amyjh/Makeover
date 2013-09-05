@@ -64,8 +64,8 @@
             %table.table
               %colgroup
                 %col{:span => "1", :style => "width: 50%;"}/
-                %col{:span => "1", :style => "width: 35%;"}/
-                %col{:span => "1", :style => "width: 15%;"}/
+                %col{:span => "1", :style => "width: 25%;"}/
+                %col{:span => "1", :style => "width: 25%;"}/
               %thead
                 %tr
                   %th Ticket Type
@@ -79,10 +79,10 @@
                     £3 + £0.20 
                     %span.bfee BF
                   %td.buylinks
-                    #quantity{:align => "right"}
-                      %input.decrement{:name => "subtract", :type => "button", :value => "-"}/
+                    #quantity{}
+                      %input.decrement.qbtn{:name => "subtract", :type => "button", :value => "-"}/
                       %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input.increment{:name => "add", :type => "button", :value => "+"}/
+                      %input.increment.qbtn{:name => "add", :type => "button", :value => "+"}/
                 %tr
                   %td
                     Student
@@ -90,10 +90,10 @@
                     £3 + £0.20
                     %span.bfee BF
                   %td.buylinks
-                    #quantity{:align => "right"}
-                      %input.decrement{:name => "subtract", :type => "button", :value => "-"}/
+                    #quantity{}
+                      %input.decrement.qbtn{:name => "subtract", :type => "button", :value => "-"}/
                       %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input.increment{:name => "add", :type => "button", :value => "+"}/
+                      %input.increment.qbtn{:name => "add", :type => "button", :value => "+"}/
                 %tr
                   %td
                     General Admission
@@ -101,10 +101,10 @@
                     £4 + £0.20
                     %span.bfee BF
                   %td.buylinks
-                    #quantity{:align => "right"}
-                      %input.decrement{:name => "subtract", :type => "button", :value => "-"}/
+                    #quantity{}
+                      %input.decrement.qbtn{:name => "subtract", :type => "button", :value => "-"}/
                       %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input.increment{:name => "add", :type => "button", :value => "+"}/
+                      %input.increment.qbtn{:name => "add", :type => "button", :value => "+"}/
                 %tr.pprow
                   %td{:colspan => "3"}
                     %div{:align => "right"}

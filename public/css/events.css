@@ -273,6 +273,8 @@ ul.scroll-nav-list{
 
 .buytable tbody tr td{
   border-top: 0;
+  vertical-align:center;
+  line-height:32px;
 }
 
 .buytable thead{
@@ -288,16 +290,51 @@ ul.scroll-nav-list{
   font-size:11px;
 }
 
+.buytable .buylinks input#qty{
+  width: 50px;
+  display: inline;
+  text-align:center;
+  font-size:12px;
+}
+
+.buytable .qbtn{
+  color: white;
+  font-style:bold;
+  background: #E74C3C;
+  border:#E74C3C;
+  padding: 0px 9px;
+  line-height: 22px;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+}
+
 tr.pprow img{
   height:25px;
 }
 
-
+tr.pprow .btn{
+  margin-right:25px;
+  margin-left: 10px;
+  width:19%;
+}
 /***********SOCIAL**********/
 
 .fb-comments{
   margin-bottom:10px;
 }
+
+
 /************MAP************/
 
 .mapwrap h2{
@@ -309,49 +346,3 @@ tr.pprow img{
   margin-top:15px;
 }
 
-/*#infowrap {
-    width: 100%;
-    background: #232121;
-    padding-bottom: 45px;
-    text-align:center;
-}
-
-#infowrap h2 {
-  text-align:left;
-  margin-left:5px;
-  border-left:10px #ec602f solid;
-  padding-left:3px;
-  margin-bottom:40px;
-  color:#fff;
-}
-
-#infowrap h3 {
-  font-weight:400;
-  font-size:30px;
-  color:#ec602f;
-  text-align:center;
-  margin:5px;
-}
-
-#infowrap h4 {
-  font-weight:400;
-  font-size:22px;
-  line-height:28px;
-  color:#fff;
-  margin:5px;
-}
-
-#infowrap p {
-  font-weight:400;
-  font-size:22px;
-  line-height:28px;
-  color:#8a8888;
-  padding-top:50px;
-  margin-bottom:10px;
-  margin:5px;
-}
-
-.span4 {
-width: 33%;
-float:left;
-}
