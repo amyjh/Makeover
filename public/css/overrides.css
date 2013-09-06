@@ -91,7 +91,7 @@ li a:hover{
   padding-left: 5px;
 }
 
-.nav li a{
+.nav li a {
   font-size: 13px;
   color: #bbc0c2;
   display: block;
@@ -112,37 +112,29 @@ li a:hover{
 }
 
 .navbar{
-  /**padding-top:2px;**/
   background: rgba(0, 0, 0, 0.88);
 }
 
-
-.row.header .searchbar { 
+.row.header .searchbar {
+  display: inline-block;
+  position: relative;
+  	left: 15%;
   width: 350px;
-  position:relative;
-  text-align:center;
   margin-left:auto;
   margin-right:auto;
-  margin-top:10px;margin-top:10px;
-  display:block;
-  display: block;
+  margin-top: 11px;
   height: 38px;
-  padding: 0px;
   font-size: 14px;
-  line-height: 1.428571429;
-  vertical-align: middle;
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #bbc0c2;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  color:#666;
+  color:#bbc0c2;
 }
 
 .row.header .searchbar:hover {
   border-color: #fbfbfb;
   background-color: #fbfbfb;
-  color:#fbfbfb;
+  color:#bbc0c2;
 }
 
 .navbar-nav li .glyphicon,  {
@@ -164,7 +156,7 @@ li a:hover{
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  color: white;
+  color: #bbc0c2;
 }
 
 .row.header .searchbar:hover .glyphicon{
@@ -181,7 +173,7 @@ li a:hover{
   width:80%;
   background: none;
   border: 0px;
-  color:white;
+  color:#bbc0c2;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -195,41 +187,15 @@ li a:hover{
   color:#131414;
 }
 
-.row.header .searchbar ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #999;
-}
-.row.header .searchbar :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #999;
-}
-.row.header .searchbar ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #999;
-}
-.row.header .searchbar :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #999;
-}
+.row.header .searchbar ::-webkit-input-placeholder { color:#bbc0c2; }
+.row.header .searchbar ::-moz-placeholder { color:#bbc0c2; }
+.row.header .searchbar :-ms-input-placeholder { color:#bbc0c2; }
+.row.header .searchbar input :-moz-placeholder { color:#bbc0c2; }
 
-.row.header .searchbar:hover ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #131414;
-}
-.row.header .searchbar:hover :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #131414;
-}
-.row.header .searchbar:hover ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #131414;
-}
-.row.header .searchbar:hover :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #131414;
-}
-
-.navbar-text{
-  margin-top:-45px;
-}
-
-/* all */
-.row.header .searchbar ::-webkit-input-placeholder { color:#fbfbfb; }
-.row.header .searchbar ::-moz-placeholder { color:#fbfbfb; } /* firefox 19+ */
-.row.header .searchbar :-ms-input-placeholder { color:#fbfbfb; } /* ie */
-.row.header .searchbar input :-moz-placeholder { color:#fbfbfb; }
+.row.header .searchbar:hover ::-webkit-input-placeholder { color: #131414; }
+.row.header .searchbar:hover :-moz-placeholder { color: #131414; }
+.row.header .searchbar:hover ::-moz-placeholder { color: #131414; }
+.row.header .searchbar:hover :-ms-input-placeholder { color: #131414; }
 
 
 /* user login / register */
@@ -295,6 +261,7 @@ a.profpic img{
 
 
 /********** FOOTER WRAP **********/
+
 #footerwrap {
   width: 100%;
   height:105px;
@@ -306,6 +273,7 @@ a.profpic img{
 }
 
 #footerwrap .container{
+  margin-top: 20px;
   max-width:none;
   padding-left:30px;
   padding-right:30px;
