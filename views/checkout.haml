@@ -15,30 +15,32 @@
   .container.content-box
     .row
       .col-lg-4
-        .int-content-left
-          %h2.purchase-summary-title Step 2: Names
-          %p Names are required for each field. If the people attending are unknown, you may use your own.
-          .striped-hr
-          %h2.purchase-summary-title Purchase Summary
-          .purchase_summary
-            / Loop
-            .row
-              .col-lg-8 3 x General Admission
-              .col-lg-4 £18.50
-            .row
-              .col-lg-8 2 x VIP
-              .col-lg-4 £18.50
-            
-            .row
-              .col-lg-8
-                %span.pull-right Subtotal
-              .col-lg-4
-                £18.50
-            .row
-              .col-lg-8
-                %span.pull-right Total
-              .col-lg-4
-                £18.50
+        %h2.purchase-summary-title Step 2: Names
+        %p Names are required for each field. If the people attending are unknown, you may use your own.
+        .striped-hr
+        %h2.purchase-summary-title Purchase Summary
+        .purchase_summary
+          / Loop
+          .row
+            .col-lg-8 3 x General Admission
+            .col-lg-4 £18.50
+          .row
+            .col-lg-8 2 x VIP
+            .col-lg-4 £18.50
+          
+          .row
+            .col-lg-8
+              %span.pull-right Subtotal
+            .col-lg-4
+              £18.50
+          .row
+            .col-lg-8
+              %span.pull-right Total
+            .col-lg-4
+              £18.50
+        #payment-methods
+          %img{src: "img/cards-accepted.png"}
+          %img{src: "img/paypal_express.gif"}
 
       .col-lg-8
         %h2.purchase-summary-title Purchaser and Ticket Data
@@ -80,6 +82,10 @@
           .row
             .col-lg-12
               .form-actions
-                %button.btn.btn-red.pull-right{:name => "step", :type => "submit", :value => "step_3"}
-                  Pay now
-                  %span.glyphicon.glyphicon-chevron-right
+                .row
+                  .col-lg-10
+                    .alert#terms By clicking 'Pay/Register Now' you agree to the refund policy and terms & conditions. Refunds can only be offered if the event is cancelled or postponed.
+                  .col-lg-2
+                    %button.btn.btn-red.pull-right{:name => "step", :type => "submit", :value => "step_3"}
+                      Pay now
+                      %span.glyphicon.glyphicon-chevron-right
