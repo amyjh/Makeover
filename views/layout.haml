@@ -17,13 +17,16 @@
     %script{ :src => "js/bootstrap-carousel.js" }
     %script{ :src => "js/jquery.scrollNav.js" }
 
+  
   %body
+    
     - if request.path == "/"  
       = haml :"shared/header_homepage"
     - else
       = haml :"shared/header"
 
-    = yield
+    #wrap
+      = yield
     
     = haml :"shared/footer"
 

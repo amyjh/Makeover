@@ -3,7 +3,7 @@
 %br
 .row
   .container
-    .col-lg-12.col-md-12.boxed.maintitle.content
+    .col-lg-12.col-md-12.maintitle.content-box
       / %h2 A-List Bath presents...
       %h1 My Account
 .row
@@ -19,7 +19,7 @@
         %button.close{"data-dismiss" => "alert", :type => "button"} ×
         %h4 Important!
         %p Please ensure your account information matches your identification for verification at the venue.
-      .content.boxed
+      .content-box
         %h3 Edit Account
         %form#edit_user.simple_form.form-horizontal{"accept-charset" => "UTF-8", :action => "/users", :method => "post", :novalidate => "novalidate"}
           %div{:style => "margin:0;padding:0;display:inline"}

@@ -1,14 +1,29 @@
 /* Key scaffolding - this should contain common overrides to boostrap accross the entire site
 -------------------------------------------------- */
+html{
+  height:100%;
+}
+
 body {
   padding-top: 60px;
+  height:100%;
   font-family: 'Oxygen', sans-serif;
   background-color: #f0f0f0;
 }
+
 @media (max-width: 768px) {
   body {
     padding-top: 110px;
   }
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  /* Negative indent footer by its height */
+  margin: 0 auto -105px;
+  /* Pad bottom by footer height */
+  padding: 0 0 80px;
 }
 
 .full-length{
@@ -125,12 +140,12 @@ li a:hover{
 }
 
 .row.header .searchbar:hover {
-  border-color: #ffffff;
-  background-color: #ffffff;
-  color:#666;
+  border-color: #fbfbfb;
+  background-color: #fbfbfb;
+  color:#fbfbfb;
 }
 
-.navbar-nav li .glyphicon, .row.header .searchbar .glyphicon {
+.navbar-nav li .glyphicon,  {
   float:left;
   vertical-align:bottom;
   background: none;
@@ -138,8 +153,26 @@ li a:hover{
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  color:#ffffff;
   color: #666;
+}
+
+.row.header .searchbar .glyphicon{
+  float:left;
+  vertical-align:bottom;
+  background: none;
+  border: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: white;
+}
+
+.row.header .searchbar:hover .glyphicon{
+  color: #131414;
+}
+
+.row.header .searchbar .glyphicon:hover{
+  color: #E74C3C;
 }
 
 .row.header .searchbar input.search_events_input{
@@ -148,19 +181,55 @@ li a:hover{
   width:80%;
   background: none;
   border: 0px;
-  color:#ffffff;
+  color:white;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
+.row.header .searchbar:hover input.search_events_input{
+  color:#131414;
+}
+
 .row.header .searchbar input.search_events_input:hover {
-  color:#666;
+  color:#131414;
+}
+
+.row.header .searchbar ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #999;
+}
+.row.header .searchbar :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+}
+.row.header .searchbar ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #999;
+}
+.row.header .searchbar :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #999;
+}
+
+.row.header .searchbar:hover ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #131414;
+}
+.row.header .searchbar:hover :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #131414;
+}
+.row.header .searchbar:hover ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #131414;
+}
+.row.header .searchbar:hover :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #131414;
 }
 
 .navbar-text{
   margin-top:-45px;
 }
+
+/* all */
+.row.header .searchbar ::-webkit-input-placeholder { color:#fbfbfb; }
+.row.header .searchbar ::-moz-placeholder { color:#fbfbfb; } /* firefox 19+ */
+.row.header .searchbar :-ms-input-placeholder { color:#fbfbfb; } /* ie */
+.row.header .searchbar input :-moz-placeholder { color:#fbfbfb; }
 
 
 /* user login / register */
@@ -228,9 +297,7 @@ a.profpic img{
 /********** FOOTER WRAP **********/
 #footerwrap {
   width: 100%;
-  /*background: rgba(35, 35, 36, 1);*/
-  /*background: rgba(0, 0, 0, 0.9);*/
-  /*background: #ddd;*/
+  height:105px;
   background: #fbfbfb;
   padding-bottom: 45px;
   text-align:center;
@@ -304,26 +371,6 @@ a.profpic img{
 #footerwrap ul.fitems li a:hover {
   color: #999999;
 }
-/*
-#footerwrap .iconbar a {
-  color:transparent;
-}
-
-#footerwrap .iconbar img {
-  width:90px;
-}
-
-#footerwrap .iconbar img{
-  width:50px;
-  opacity:0.4;
-  filter:alpha(opacity=40); /* For IE8 and earlier */
-/*}**/
-
-/*#footerwrap .iconbar a:hover img{
-  color:transparent;
-  opacity:1;
-  filter:alpha(opacity=40); /* For IE8 and earlier */
-
 
 /***********BUTTONS***********/
 
@@ -465,6 +512,10 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   padding-top:5px;
 }
 
+.maintitle{
+  margin-top:5px;
+}
+
 .contentpage.leftpane{
   padding-left:0px;
 }
@@ -487,7 +538,7 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   margin-bottom:10px;
 }
 
-.content h3{
+.content-box h3{
   font-size: 22px;
   font-weight:400;
   -webkit-margin-before: 0.3em;
@@ -503,6 +554,15 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   box-shadow: 1px 1px 4px rgba(0,0,0,.2);
 }
 
+
+/******* content box ******/
+
+.content-box {
+  background: #FFF;
+  border: 1px solid #DDD;
+  padding: 20px;
+  margin-bottom: 15px;
+}
 
 
 /*********** ACCOUNT INFO ************/
@@ -561,11 +621,3 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   margin-bottom: 18px;
 }
 
-/******* content box ******/
-
-.content-box {
-	background: #FFF;
-	border: 1px solid #DDD;
-  padding: 20px;
-  margin-bottom: 15px;
-}
