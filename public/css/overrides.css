@@ -39,7 +39,7 @@ h4{
 }
 
 p, a {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a, a:hover{
@@ -157,23 +157,27 @@ li a:hover{
 
 }
 
-.user a{
+.user a.user-login{
   margin-top: 10px;
   font-size: 13px;
   padding: 8px 12px;
-  border: 2px solid #bbc0c2;
+ /* border: 2px solid #bbc0c2;*/
+  border: 2px solid white;
   display: inline-block;
-  color: #bbc0c2;
+  /*color: #bbc0c2;*/
+  color:white;
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
   border-radius: 9px;
   text-shadow: 1px 1px 1px #131414
 }
-.user a:hover {
-  background: #bbc0c2;
-  color: #ffffff;
+.user a.user-login:hover {
+  /*background: #bbc0c2;*/
+  background:white;
+  /*color: #ffffff;*/
+  color:#131414;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #131414
+  /*text-shadow: 1px 1px 1px #999*/
 }
 
 .userli a{
@@ -275,7 +279,7 @@ a.profpic img{
   -webkit-padding-start:0px;
 }
 
-#footerwrap ul.fitems li {
+#footerwrap ul.fitems li a {
   float: left;
   width: 85px;
   color: #999999;
@@ -286,6 +290,9 @@ a.profpic img{
   margin-right:30px;
 }
 
+#footerwrap ul.fitems li a:hover {
+  color: #999999;
+}
 /*
 #footerwrap .iconbar a {
   color:transparent;
