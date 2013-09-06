@@ -11,14 +11,6 @@ class App < Sinatra::Base
     haml :events
   end
   
-  get '/events_nav' do
-    haml :events_nav
-  end
-
-  get '/fake' do
-    haml :fake
-  end
-  
   get '/about' do
     haml :about
   end
@@ -38,5 +30,8 @@ class App < Sinatra::Base
   get '/account' do
     haml :account
   end
-
+  
+  get '/checkout' do
+    haml :checkout
+  end
 end

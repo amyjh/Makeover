@@ -1,10 +1,10 @@
 %link{ :href => "css/checkout.css", :rel => "stylesheet" }/
 
 .container
-  .checkout-steps.clearfix
+  #checkout-steps.clearfix
     %p.step
       %span.glyphicon.glyphicon-chevron-right
-      Your purchase
+      Purchase
     %p.step.step-active
       %span.glyphicon.glyphicon-chevron-right
       Checkout
@@ -12,62 +12,74 @@
       Your tickets
 
 #checkout-content-wrap
-  .container
+  .container.content-box
     .row
       .col-lg-4
         .int-content-left
-          %h2.order-summary-title Step 2: Names
+          %h2.purchase-summary-title Step 2: Names
           %p Names are required for each field. If the people attending are unknown, you may use your own.
           .striped-hr
-          %h2.order-summary-title Order Summary
-          .purchase_process_order_summary.event-edit-panel
+          %h2.purchase-summary-title Purchase Summary
+          .purchase_summary
+            / Loop
             .row
-              .col-lg-8 1 x General Admission
-              .col-lg-4 $18.50 CAD
+              .col-lg-8 3 x General Admission
+              .col-lg-4 £18.50
+            .row
+              .col-lg-8 2 x VIP
+              .col-lg-4 £18.50
+            
             .row
               .col-lg-8
                 %span.pull-right Subtotal
               .col-lg-4
-                $18.50 CAD
+                £18.50
             .row
               .col-lg-8
                 %span.pull-right Total
               .col-lg-4
-                $18.50 CAD
+                £18.50
 
       .col-lg-8
-        %h2.order-summary-title Purchaser and Ticket Data
-        .purchase_process_activity
-          %form#TicketStep2Form{"accept-charset" => "utf-8", :action => "/ticket_prices/step_2", :method => "post"}
-            %div{:style => "display:none;"}
-              %input{:name => "_method", :type => "hidden", :value => "POST"}/
-              
-            .purchase_process_guest_form
-              .purchase_process_guest_form_ticket_heading
-                %span Ticket 1: General Admission
-              .row-fluid
-                .col-lg-4
-                  %input#Ticket0TicketPriceId{:name => "data[Ticket][0][ticket_price_id]", :type => "hidden", :value => "26901"}/
-                  .control-group
-                    %label.control-label{:for => "Ticket0FirstName"}
-                    .controls
-                      %input#Ticket0FirstName{:controls_class => "", :maxlength => "255", :name => "data[Ticket][0][first_name]", :placeholder => "First Name", :required => "required", :type => "text"}
-                      
-                .col-lg-4
-                  .control-group
-                    %label.control-label{:for => "Ticket0LastName"}
-                    .controls
-                      %input#Ticket0LastName{:controls_class => "", :maxlength => "255", :name => "data[Ticket][0][last_name]", :placeholder => "Last Name", :required => "required", :type => "text"}
-                      
-                .col-lg-4
-                  .control-group
-                    %label.control-label{:for => "Ticket0Email"}
-                    .controls
-                      %input#Ticket0Email{:controls_class => "", :maxlength => "255", :name => "data[Ticket][0][email]", :placeholder => "Email", :required => "required", :type => "email"}/
-                      
-            .row-fluid
-              .col-lg-12
-                .form-actions
-                  %button.btn.btn-picatic.pull-right{:name => "step", :type => "submit", :value => "step_3"}
-                    Step 3: Billing
-                    %i.icon-chevron-right.icon-white
+        %h2.purchase-summary-title Purchaser and Ticket Data
+        .purchase_ticket_form
+          .purchase_ticket
+            #purchase_ticket_form_heading
+              %span Ticket 1: Bridge Mondays - General Admission
+            .row
+              .col-lg-4
+                .control-group
+                  .controls
+                    %input{:controls_class => "", :maxlength => "255", :placeholder => "First Name", :required => "required", :type => "text"}
+              .col-lg-4
+                .control-group
+                  .controls
+                    %input{:controls_class => "", :maxlength => "255", :placeholder => "Last Name", :required => "required", :type => "text"}
+              .col-lg-4
+                .control-group
+                  .controls
+                    %input{:controls_class => "", :maxlength => "255", :placeholder => "Email", :required => "required", :type => "text"}
+        
+          .purchase_ticket
+            #purchase_ticket_form_heading
+              %span Ticket 2: Bridge Mondays - General Admission
+            .row
+              .col-lg-4
+                .control-group
+                  .controls
+                    %input{:controls_class => "", :maxlength => "255", :placeholder => "First Name", :required => "required", :type => "text"}
+              .col-lg-4
+                .control-group
+                  .controls
+                    %input{:controls_class => "", :maxlength => "255", :placeholder => "Last Name", :required => "required", :type => "text"}
+              .col-lg-4
+                .control-group
+                  .controls
+                    %input{:controls_class => "", :maxlength => "255", :placeholder => "Email", :required => "required", :type => "text"}
+                  
+          .row
+            .col-lg-12
+              .form-actions
+                %button.btn.btn-red.pull-right{:name => "step", :type => "submit", :value => "step_3"}
+                  Pay now
+                  %span.glyphicon.glyphicon-chevron-right

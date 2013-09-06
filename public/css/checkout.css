@@ -1,42 +1,23 @@
-body {
-  font-family: 'Oxygen', sans-serif;
-}
-
 h1{
-font-family: 'Cabin Condensed', sans-serif;
+  font-family: 'Cabin Condensed', sans-serif;
 }
 
 h2{
-font-family: 'Cabin Condensed', sans-serif;
+  font-family: 'Cabin Condensed', sans-serif;
 }
 
-h3{
-font-family: 'Oxygen', sans-serif;
-}
-
-h4{
-font-family: 'Oxygen', sans-serif;
-}
-
-h5{
-font-family: 'Oxygen', sans-serif;
-}
-
-p{
-font-family: 'Oxygen', sans-serif;
-}
 
 /*--------------------------------
 	Checkout
 ---------------------------------*/
 
-.checkout-steps {
+#checkout-steps {
 	background: #FFF;
 	border: 1px solid #DDD;
 	margin: 20px 0;
 }
 
-.checkout-steps .step {
+#checkout-steps .step {
 	float: left;
 	width: 33.3%;
 	padding: 20px 2%;
@@ -46,12 +27,35 @@ font-family: 'Oxygen', sans-serif;
   text-align: center;
 }
 
-.checkout-steps .step-active {
+#checkout-steps .step-active {
 	color: #444;
 }
 
-.checkout-steps .step span {
+#checkout-steps .step span {
 	float: right;
-	color: #ff884c;
+	color: #E74C3C;
 }
 
+.purchase-summary-title {
+  border-bottom: 2px solid #e5e5e5;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.purchase_ticket_form .purchase_ticket {
+  margin-bottom: 5px;
+}
+
+.purchase_ticket_form .form-actions {
+  padding: 17px 20px 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  border-top: 1px solid #e5e5e5;
+}
+
+#purchase_ticket_form_heading {
+  margin-bottom: 5px;
+}

@@ -101,16 +101,23 @@
                     £4 + £0.20
                     %span.bfee BF
                   %td.buylinks
-                    #quantity{}
-                      %input.decrement.qbtn{:name => "subtract", :type => "button", :value => "-"}/
-                      %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input.increment.qbtn{:name => "add", :type => "button", :value => "+"}/
+                    .row
+                      .col-lg-6
+                        .input-group
+                          %span.input-group-btn
+                            %a.btn.btn-danger -
+                          %input.form-control{:type => "text"}/
+                          %span.input-group-btn
+                            %button.btn.btn-danger{:type => "button"} +
+                          
+
                 %tr.pprow
                   %td{:colspan => "3"}
                     %div{:align => "right"}
                       %img{:alt => "Gotag-cards", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/gotag-cards-88de37efa66edd0ac5fb2376090f2d15.png"}/
                       %img{:alt => "Paypal_express", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/payment_gateway_logos/paypal_express-2188c870f7021ad9be6c34e23ce789eb.gif"}/
                       %input.btn.btn-blue{:name => "commit", :type => "submit", :value => "Purchase"}/
+                      
           %h2.scroll-headline Event Description
           %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           %a{:href => "#"} read more...

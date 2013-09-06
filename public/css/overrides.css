@@ -320,55 +320,110 @@ a.profpic img{
 
 /***********BUTTONS***********/
 
-.btn.btn-blue {
-  background-color: #3498db;
-}
+/*** Custom blue button ***/
+  .btn-blue {
+    color: #ffffff;
+    background-color: #3498db;
+    border-color: #357ebd;
+  }
 
-.btn.btn-red{
-  background-color: #E74C3C;
-}
+  .btn-blue:hover,
+  .btn-blue:focus,
+  .btn-blue:active,
+  .btn-blue.active,
+  .open .dropdown-toggle.btn-blue {
+    color: #ffffff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+  }
 
-.btn.btn-large {
+  .btn-blue:active,
+  .btn-blue.active,
+  .open .dropdown-toggle.btn-blue {
+    background-image: none;
+  }
+
+  .btn-blue.disabled,
+  .btn-blue[disabled],
+  fieldset[disabled] .btn-blue,
+  .btn-blue.disabled:hover,
+  .btn-blue[disabled]:hover,
+  fieldset[disabled] .btn-blue:hover,
+  .btn-blue.disabled:focus,
+  .btn-blue[disabled]:focus,
+  fieldset[disabled] .btn-blue:focus,
+  .btn-blue.disabled:active,
+  .btn-blue[disabled]:active,
+  fieldset[disabled] .btn-blue:active,
+  .btn-blue.disabled.active,
+  .btn-blue[disabled].active,
+  fieldset[disabled] .btn-blue.active {
+    background-color: #428bca;
+    border-color: #357ebd;
+  }
+/*** END custom blue button ***/
+
+/*** Custom red button ***/
+  .btn-red {
+    color: #ffffff;
+    background-color: #E74C3C;
+    border-color: #d43f3a;
+  }
+
+  .btn-red:hover,
+  .btn-red:focus,
+  .btn-red:active,
+  .btn-red.active,
+  .open .dropdown-toggle.btn-red {
+    color: #ffffff;
+    background-color: #d2322d;
+    border-color: #ac2925;
+  }
+
+  .btn-red:active,
+  .btn-red.active,
+  .open .dropdown-toggle.btn-red {
+    background-image: none;
+  }
+
+  .btn-red.disabled,
+  .btn-red[disabled],
+  fieldset[disabled] .btn-red,
+  .btn-red.disabled:hover,
+  .btn-red[disabled]:hover,
+  fieldset[disabled] .btn-red:hover,
+  .btn-red.disabled:focus,
+  .btn-red[disabled]:focus,
+  fieldset[disabled] .btn-red:focus,
+  .btn-red.disabled:active,
+  .btn-red[disabled]:active,
+  fieldset[disabled] .btn-red:active,
+  .btn-red.disabled.active,
+  .btn-red[disabled].active,
+  fieldset[disabled] .btn-red.active {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+  }
+/*** END custom red button ***/
+
+
+.btn-large {
   font-size: 16.996px;
   line-height: 20px;
   padding: 12px 18px 13px;
 }
 
-.btn.btn-small{
+.btn-small{
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn {
-  border: none;
-  background: #bdc3c7;
-  color: #ffffff;
-  padding: 9px 12px 10px;
-  line-height: 22px;
-  text-decoration: none;
-  text-shadow: none;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-backface-visibility: hidden;
-}
-
 .btn, .btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover {
-font-size: 14.994px;
-font-weight: 500;
+  font-size: 14.994px;
+  font-weight: 500;
 }
-
-
-
 
 a.thumbnail.gldisplay{
   height:345px; 
@@ -497,4 +552,13 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
 
 .form-horizontal .control-group {
   margin-bottom: 18px;
+}
+
+/******* content box ******/
+
+.content-box {
+	background: #FFF;
+	border: 1px solid #DDD;
+  padding: 20px;
+  margin-bottom: 15px;
 }
