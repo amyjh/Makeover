@@ -63,8 +63,14 @@ a.thumbnail.gldisplay img{
   bottom:125px;
 }
 
+.carousel-inner {
+  background: rgba(0, 0, 0, 0.88);
+}
 .carousel-inner .item{
-  height:660px;
+  height:600px;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -115,10 +121,14 @@ form.navbar-search.large input.search-query{
 
 #servicewrap{
   padding-top:10px;
+  margin-bottom:35px;
 }
 
+
+/*******THUMBNAILS*********/
 a.thumbnail.gldisplay{
-  height:345px; 
+  height:285px;
+  width:285px; 
   text-align:center;
 }
 
@@ -127,8 +137,55 @@ a.thumbnail.gldisplay img{
   width:100%;
 }
 
+#glhover{
+  display:none;
+  position: absolute;
+}
+
+a.thumbnail.gldisplay:hover + #glhover{
+  color:white;
+  display: block;
+  position:absolute;
+  top:0;
+  left: 50%;
+  text-align:center;
+}
+
+a.thumbnail.gldisplay:hover img{
+  opacity:0.9;
+}
+
+#glhovercontent {
+  position: relative;
+  height:100%;
+  width:100%;
+  left: -50%;
+}
+
+#glhovercontent h2 {
+  color:#E74C3C;
+  text-align:center;
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.9);
+}
+
+/*a.thumbnail.gldisplay:hover + #glhover2{
+  color:white;
+  position:absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  background:red;
+  text-align:center;
+}*/
+
 a.thumbnail.gsdisplay{
-  height:170px; 
+  height:140px; 
+  width:140px;
   text-align:center;
   margin-bottom:5px;
 }
@@ -142,34 +199,56 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   margin-bottom:0;
 }
 
+/**************WHY GOTAG****************/
+
 #whygotag{
   text-align:center;
 }
 
-.featureslist .media:first-child {
-margin-top: 15px;
+#features{
+  padding-bottom:10px;
 }
-.featureslist i{
+
+#features .featureslist .media {
+  margin-top: 15px;
+}
+
+#features .mediabox {
+  padding:4px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.description{
+  width:60%;
+  float:left;
+}
+#features .featureslist i{
   /*background-position: 16px 6px;*/
-  float: left;
+  /*float: left;*/
   height: 64px;
-  width: 80px;
+  width: 75px;
   margin: 0;
   background: url('../img/icon/features.png');
+  margin-right:5px;
 }
 
-i.discover{
-  background-position: 16px 6px;
+#features i.discover{
+  background-position: 15px 3px;
 }
 
-i.search{
-  background-position: 12px -195px;
+#features i.search{
+  background-position: 6px -197px;
 }
 
-i.social{
-  background-position: 10px -135px;
+#features i.social{
+  background-position: 12px -130px;
 }
 
-i.purchase{
-  background-position: 12px -65px;
+#features i.purchase{
+  background-position: 3px -65px;
+}
+
+#footerwrap{
+  margin-top: 25px;
 }

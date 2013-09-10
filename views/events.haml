@@ -35,24 +35,6 @@
             .glyphblock 
               %span.glyphicon.glyphicon-map-marker 
               %p.afterglyph Second Bridge, Bath, BA1 2EX
-          / .tbox
-          /   %h3.text-left Friends Attending (7)
-          /   .container
-          /     %ul.fbgrid
-          /       %li
-          /         %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-          /       %li
-          /         %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-          /       %li
-          /         %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-          /       %li
-          /         %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-          /       %li
-          /         %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-          /       %li
-          /         %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
-          /       %li
-          /         %img{:alt => "", :src => "img/blurred.jpeg", :style => "width: 32px; height:32px;"}/
           .tbox
             .fb-like{"data-href" => "http://developers.facebook.com/docs/reference/plugins/like", "data-layout" => "button_count", "data-send" => "true", "data-show-faces" => "true", "data-width" => "450"}
             %br
@@ -80,7 +62,7 @@
                     %span.bfee BF
                   %td.buylinks
                     #quantity{}
-                      %input.decrement.qbtn{:name => "subtract", :type => "button", :value => "-"}/
+                      %input.decrement.btn.qbtn{:name => "subtract", :type => "button", :value => "-"}/
                       %input#qty{:name => "qty", :type => "text", :value => "0"}/
                       %input.increment.qbtn{:name => "add", :type => "button", :value => "+"}/
                 %tr
@@ -91,7 +73,7 @@
                     %span.bfee BF
                   %td.buylinks
                     #quantity{}
-                      %input.decrement.qbtn{:name => "subtract", :type => "button", :value => "-"}/
+                      %input.decrement.btn.qbtn{:name => "subtract", :type => "button", :value => "-"}/
                       %input#qty{:name => "qty", :type => "text", :value => "0"}/
                       %input.increment.qbtn{:name => "add", :type => "button", :value => "+"}/
                 %tr
@@ -105,10 +87,10 @@
                       .col-lg-6
                         .input-group
                           %span.input-group-btn
-                            %a.btn.btn-danger -
+                            %a.btn.btn-red -
                           %input.form-control{:type => "text"}/
                           %span.input-group-btn
-                            %button.btn.btn-danger{:type => "button"} +
+                            %button.btn.btn-red{:type => "button"} +
                           
 
                 %tr.pprow
