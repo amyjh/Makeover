@@ -1,29 +1,21 @@
-/ Fixed navbar
-.navbar.navbar-fixed-top
-  .container
-    
+.top-nav
+  .navbar.navbar-fixed-top
     %a.navbar-toggle{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
-    
     %a.navbar-brand{:href => "/"}
       %img{:alt => "GoTag Logo", :border => "0", :src => "img/logo-150.png", :width => "80"}/
     .nav-collapse.collapse
-      %ul.nav.navbar-nav
+      %ul.links.nav.navbar-nav
         %li
           %a{:href => "browse"} BROWSE
         %li
           %a{:href => "#"} SELL TICKETS
-        
-        / %li.disabled
-        /   %form.navbar-search.pull-left
-        /     %input.search-query{:placeholder => "Where do you want to go?", :type => "text"}/
-    / %p.navbar-text.pull-right
-    /   Signed in as
-    /   %a.navbar-link{:href => "#"} Amy Hunter
     
-    %p.navbar-text.pull-right
-      .user.text-right
+    .pull-right
+      .user
         %a.user-login{:href => "/signin"} LOG IN
         %a.user-login{:href => "/signin"} SIGN UP
+        
+        
