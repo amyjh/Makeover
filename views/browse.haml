@@ -1,187 +1,83 @@
 %link{ :href => "css/browse.css", :rel => "stylesheet" }/
-%br
-.row
-  .container
-    .col-lg-12.col-md-12.main{:style => "margin-bottom:10px;"}
-      
-    .col-lg-12.mainfeed.demowrap.main{:style => "margin-bottom:10px;"}
-      .row
-        .col-lg-4.leftpane
-          .todo.mrm.boxed
-            .todo-search
-              %input.todo-search-field{:placeholder => "Search", :type => "search", :value => ""}/
-            %ul{:style => "margin-left: -40px;"}
-              %li.todo-done
-                .todo-content
-                  %h4.todo-name
-                    Popular
-              %li
-                .todo-content
-                  %h4.todo-name
-                    Venue
-              %li
-                .todo-content
-                  %h4.todo-name
-                    Date
-              %li
-                .todo-content
-                  %h4.todo-name
-                    Tags
-        .col-lg-8.rightpane
-          .col-lg-6
-            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
-              %img{:alt => "", :src => "img/flyer/boat.jpg",}
-              %p Boat Party 2013
-              %p.venue Second Bridge
-              .gsdate
-                %p.eventday 16 
-                %p.eventmonth SEP
-              .tickets
-                %input.btn.btn-small.btn-red{:name => "commit", :type => "submit", :value => "LIMITED TICKETS"}/
-          .col-lg-6
-            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
-              %img{:alt => "", :src => "img/flyer/freshers.png",}
-              %p Freshers Week 2013
-              %p.venue Second Bridge
-              .gsdate
-                %p.eventday 18 
-                %p.eventmonth AUG
-              .tickets
-                %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-          / .col-lg-4
-          /   %a.thumbnail.gsdisplay{:href => "events"}
-          /     %img{:alt => "", :src => "img/flyer/freshers.png",}
-          /     %p Freshers Week 2013
-          /     %p.venue Second Bridge
-          /     .gsdate
-          /       %p.eventday 19 
-          /       %p.eventmonth SEP
-          /     .tickets
-          /       %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-      .row
-        .col-lg-4.leftpane
-          %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
-            %img{:alt => "", :src => "img/flyer/forever.jpg",}
-            %p Forever Fridays
-            %p.venue Second Bridge
-            .gsdate
-              %p.eventday 25
-              %p.eventmonth NOV
-            .tickets
-              %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-        .col-lg-8.rightpane
-          .col-lg-6
-            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
-              %img{:alt => "", :src => "img/flyer/garden.jpg",}
-              %p Bridge Garden Party
-              %p.venue Second Bridge
-              .gsdate
-                %p.eventday 10 
-                %p.eventmonth SEP
-              .tickets
-                %input.btn.btn-small.btn-red.disabled{:name => "commit", :type => "submit", :value => "SOLD OUT"}/
-          .col-lg-6
-            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
-              %img{:alt => "", :src => "img/flyer/monday.jpg",}
-              %p Bridge Mondays
-              %p.venue Second Bridge
-              .gsdate
-                %p.eventday 06
-                %p.eventmonth AUG
-              .tickets
-                %input.btn.btn-small.btn-red{:name => "commit", :type => "submit", :value => "LIMITED TICKETS"}/
-          / .col-lg-4
-          /   %a.thumbnail.gsdisplay{:href => "events"}
-          /     %img{:alt => "", :src => "img/flyer/smut.png",}
-          /     %p Freshers Week 2013
-          /     %p.venue Second Bridge
-          /     .gsdate
-          /       %p.eventday 26 
-          /       %p.eventmonth NOV
-          /     .tickets
-          /       %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-      .row
-        .col-lg-4.leftpane
-          %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
-            %img{:alt => "", :src => "img/flyer/mnb.jpg",}
-            %p Monday Nights at Bridge
-            %p.venue Second Bridge
-            .gsdate
-              %p.eventday 25
-              %p.eventmonth NOV
-            .tickets
-              %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-        .col-lg-8.rightpane
-          .col-lg-6
-            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
-              %img{:alt => "", :src => "img/flyer/boat.jpg",}
-              %p Boat Party 2013
-              %p.venue Second Bridge
-              .gsdate
-                %p.eventday 10 
-                %p.eventmonth SEP
-              .tickets
-                %input.btn.btn-small.btn-red.disabled{:name => "commit", :type => "submit", :value => "SOLD OUT"}/
-          .col-lg-6
-            %a.thumbnail.gsdisplay.content.boxed{:href => "events"}
-              %img{:alt => "", :src => "img/flyer/sunday.jpg",}
-              %p Sunday Project
-              %p.venue Second Bridge
-              .gsdate
-                %p.eventday 06
-                %p.eventmonth AUG
-              .tickets
-                %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-      / .row
-      /   .col-lg-3.leftpane
-      /     %a.thumbnail.gsdisplay{:href => "events"}
-      /       %img{:alt => "", :src => "img/flyer/forever.jpg",}
-      /       %p Freshers Week 2013
-      /       %p.venue Second Bridge
-      /       .gsdate
-      /         %p.eventday 14 
-      /         %p.eventmonth SEP
-      /       .tickets
-      /         %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-      /   .col-lg-9.rightpane
-      /     .col-lg-4
-      /       %a.thumbnail.gsdisplay{:href => "events"}
-      /         %img{:alt => "", :src => "img/flyer/garden.jpg",}
-      /         %p Freshers Week 2013
-      /         %p.venue Second Bridge
-      /         .gsdate
-      /           %p.eventday 19 
-      /           %p.eventmonth NOV
-      /         .tickets
-      /           %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-      /     .col-lg-4
-      /       %a.thumbnail.gsdisplay{:href => "events"}
-      /         %img{:alt => "", :src => "img/flyer/monday.jpg",}
-      /         %p Freshers Week 2013
-      /         %p.venue Second Bridge
-      /         .gsdate
-      /           %p.eventday 22 
-      /           %p.eventmonth SEP
-      /         .tickets
-      /           %input.btn.btn-small.btn-blue{:name => "commit", :type => "submit", :value => "GET TICKETS"}/
-      /     .col-lg-4
-      /       %a.thumbnail.gsdisplay{:href => "events"}
-      /         %img{:alt => "", :src => "img/flyer/smut.png",}
-      /         %p Freshers Week 2013
-      /         %p.venue Second Bridge
-      /         .gsdate
-      /           %p.eventday 15
-      /           %p.eventmonth DEC
-      /         .tickets
-      /           %input.btn.btn-small.btn-red.disabled{:name => "commit", :type => "submit", :value => "SOLD OUT"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
 
-        
+.browse
+  .container
+    .row    
+      .col-lg-4
+        .event-tile.thumbnail
+          %img{:src => "img/flyer/boat.jpg"}/
+          .caption
+            %h3 Boat Party 2013
+            %p.venue Second Bridge
+            %a{class: "btn btn-primary"} Buy Tickets
+            .date
+              %p.eventday 10 
+              %p.eventmonth SEP
+      .col-lg-4
+        .event-tile.thumbnail
+          %img{:src => "img/flyer/boat.jpg"}/
+          .caption
+            %h3 Boat Party 2013
+            %p.venue Second Bridge
+            %a{class: "btn btn-primary"} Buy Tickets
+            .date
+              %p.eventday 10 
+              %p.eventmonth SEP
+      .col-lg-4
+        .event-tile.thumbnail
+          %img{:src => "img/flyer/boat.jpg"}/
+          .caption
+            %h3 Boat Party 2013
+            %p.venue Second Bridge
+            %a{class: "btn btn-primary"} Buy Tickets
+            .date
+              %p.eventday 10 
+              %p.eventmonth SEP
+      .col-lg-4
+        .event-tile.thumbnail
+          %img{:src => "img/flyer/boat.jpg"}/
+          .caption
+            %h3 Boat Party 2013
+            %p.venue Second Bridge
+            .date
+              %p.eventday 10 
+              %p.eventmonth SEP
+      .col-lg-4
+        .event-tile.thumbnail
+          %img{:src => "img/flyer/boat.jpg"}/
+          .caption
+            %h3 Boat Party 2013
+            %p.venue Second Bridge
+            .date
+              %p.eventday 10 
+              %p.eventmonth SEP
+      .col-lg-4
+        .event-tile.thumbnail
+          %img{:src => "img/flyer/boat.jpg"}/
+          .caption
+            %h3 Boat Party 2013
+            %p.venue Second Bridge
+            .date
+              %p.eventday 10 
+              %p.eventmonth SEP
+      .col-lg-4
+        .event-tile.thumbnail
+          %img{:src => "img/flyer/boat.jpg"}/
+          .caption
+            %h3 Boat Party 2013
+            %p.venue Second Bridge
+            .date
+              %p.eventday 10 
+              %p.eventmonth SEP
+      .col-lg-4
+        .event-tile.thumbnail
+          %img{:src => "img/flyer/boat.jpg"}/
+          .caption
+            %h3 Boat Party 2013
+            %p.venue Second Bridge
+            .date
+              %p.eventday 10 
+              %p.eventmonth SEP
+    .row
+      %div{style:"text-align:center;"}
+        %a{class: "btn btn-success"} Discover More Events

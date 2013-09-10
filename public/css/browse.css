@@ -1,160 +1,46 @@
-.todo {
-  /*background-color: rgba(0, 0, 0, 0.88);*/
-  background: white;
-  color: #666;
-  /*color: #798795;*/
-  margin-bottom: 15px;
-  -webkit-border-radius: 8px 8px 6px 6px;
-  -moz-border-radius: 8px 8px 6px 6px;
-  border-radius: 8px 8px 6px 6px;
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 1.231;
+.browse .event-tile {
+  min-height: 390px;
+  background-color: #ffffff;
 }
 
-.todo-search {
-  position: relative;
-  /*background: #E74C3C;*/
-  background: rgba(0, 0, 0, 0.88);
-  background-size: 16px 16px;
-  border-radius: 6px 6px 0 0;
-  color: #666;
-  padding: 19px 25px 20px;
+.browse .event-tile:hover {
+  -webkit-box-shadow: 0px 0px 8px #21b6e8;
+  -moz-box-shadow: 0px 0px 8px #21b6e8;
+  box-shadow: 0px 0px 8px #21b6e8;
 }
 
-.todo-search:before {
-  position: absolute;
-  font-size: 16px;
-  display: inline-block;
-  top: 50%;
-  left: 92%;
-  margin: -0.5em 0 0 -1em;
-}
-
-input.todo-search-field {
-  background: white;
-  border: none;
-  color: #666;
-  font-size: 19px;
-  font-weight: 700;
-  margin: 0;
-  line-height: 23px;
-  padding: 5px 0;
-  text-indent: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-.todo ul {
-  margin: 0;
-  margin-left: -40px;
-  list-style-type: none;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
-}
-
-.todo li.todo-done {
-  /*background: transparent url(../img/icon/done.png) 92% center no-repeat;*/
-  background-size: 20px 20px;
-  /*color: #1abc9c;*/
-  color: #666;
-}
-
-.todo li:first-child {
-  margin-top: 0;
-}
-
-.todo li {
-  /*background: #3498DB url(../img/icon/todo.png) 92% center no-repeat;*/
-  background: #d6d6d6;
-  background-size: 20px 20px;
-  cursor: pointer;
-  margin-top: 2px;
-  padding: 10px 42px 10px 25px;
-  position: relative;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-backface-visibility: hidden;
-  line-height: 20px;
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-.todo-content {
-  padding-top: 1px;
-  overflow: hidden;
-}
-
-.todo-name {
-  font-size: 17px;
-  margin: 1px 0 3px;
-}
-
-.todo {
-  color: white;
-}
-
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #666;
-  font-size: 14px;
-}
-input:-moz-placeholder, textarea:-moz-placeholder {
-  color: #666;
-  font-size: 14px;
-}
-
-.rightpane{
-  padding-left: 0px;
-}
-
-a.thumbnail.gsdisplay {
-  height:360px;
-  color: #666;
-  margin-bottom:10px;
+.browse .thumbnail {
+  border-radius: 0;
+  border: 1px solid #DDDDDD;
+  margin: 0 10px 10px 0;
   padding:5px;
 }
 
-a.thumbnail.gsdisplay img {
-  /*margin-bottom:10px;*/
-  height:260px;
-  width: 260px;
+.browse .thumbnail h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
 }
 
-.gsdate {
+.browse .event-tile .date {
   background-color: rgba(0, 0, 0, 0.88);
   color: white;
   position: absolute;
   top: 15px;
   left: 40px;
-  padding: 5px 15px;
+  padding: 5px 10px;
 }
 
-.gsdate p.eventday {
+.browse .event-tile .date p {
+  margin: 0;
+}
+
+.browse .event-tile .date p.eventday {
   font-size: 25px;
 }
 
-.gsdate p.eventmonth {
+.browse .event-tile .date p.eventmonth {
   font-size: 10px;
-}
-
-.gsdisplay p.venue{
-  font-size:10px;
-  padding-bottom:7px;
-}
-
-.tickets input.btn{
-  position:absolute;
-  width:80%;
-  bottom: 20px;
-  left:50%;
-  margin-left:-40%;
-  text-align:center;
+  text-align: center;
+  
 }
