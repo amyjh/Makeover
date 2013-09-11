@@ -1,14 +1,11 @@
 %link{ :href => "css/index.css", :rel => "stylesheet" }/
 
-#myCarousel.carousel.slide
+#indexCarousel.carousel.slide
   .carousel-inner
     .active.item
       %img{:alt => "", :src => "img/street.jpg"}/
       .carousel-caption
         %h1 DISCOVER EVENTS
-        / %form.navbar-search.large{:style => ""}
-        /   %input.search-query{:placeholder => "Where do you want to go?", :type => "text"}/
-        / / %p.lead Find all the hottest tickets in your area.
         .container
           .col-2
           .col-8
@@ -16,86 +13,60 @@
               .btncontainer.col-2.col-sm-1
                 .btn.glyphicon.glyphicon-search
               %input.search_events_input.col-10.col-sm-11{:placeholder => "Where do you want to go?...", :type => "text"}/
-            / %a.btn.btn-primary.btn-large.btn-blue Search Events
           .col-2
-
 #servicewrap
   .container
     %h2 Popular
     .row
-      .col-4
+      .col-8.col-sm-4
         %a.thumbnail.gldisplay{:href => "#",}
           %img{:alt => "", :src => "img/flyer/monday2.jpg"}
-          / %p Bridge Mondays
-          / %p 16th Aug
-        #glhover
-          #glhovercontent
-            / %h2 GET TICKETS
-      .col-2
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#"}
           %img{:alt => "", :src => "img/flyer/forever.jpg",}
-          / %p Forever Fridays
-          / %p 8th June
-        #gshover
-          #gshovercontent
-            / %h2 GET TICKETS
         %a.thumbnail.gsdisplay{:href => "#"}
           %img{:alt => "", :src => "img/flyer/freshers.png",}
-          / %p Freshers Week 2013
-          / %p 19th Sept
-      .col-2
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#",}
           %img{:alt => "", :src => "img/flyer/garden.jpg",}
-          / %p Garden Party
-          / %p 11th July
         %a.thumbnail.gsdisplay{:href => "#",}
           %img{:alt => "", :src => "img/flyer/smut2.png",}
-          / %p Smut
-          / %p 16th Aug
-      .col-2
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#",}
           %img{:alt => "", :src => "img/flyer/boat.jpg",}
-          / %p Garden Party
-          / %p 11th July
         %a.thumbnail.gsdisplay{:href => "#",}
           %img{:alt => "", :src => "img/flyer/mnb.jpg",}
-          / %p Smut
-          / %p 16th Aug
-      .col-2
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#",}
           %img{:alt => "", :src => "img/flyer/sunday.jpg",}
-          / %p Garden Party
-          / %p 11th July
         %a.thumbnail.gsdisplay{:href => "#",}
           %img{:alt => "", :src => "img/flyer/monday2.jpg",}
-          / %p Smut
-          / %p 16th Aug
     %h2 Recommended For You
     .row
-      .col-2
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#"}
-          %img{:alt => "", :src => "img/flyer/sunday.jpg", :height => "150"}/
-      .col-2
+          %img{:alt => "", :src => "img/flyer/sunday.jpg",}/
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#"}
-          %img{:alt => "", :src => "img/flyer/boat.jpg", :height => "150"}/
-      .col-2
+          %img{:alt => "", :src => "img/flyer/boat.jpg",}/
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#"}
-          %img{:alt => "", :src => "img/flyer/garden.jpg", :height => "150"}/
-      .col-2
+          %img{:alt => "", :src => "img/flyer/garden.jpg",}/
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#"}
-          %img{:alt => "", :src => "img/flyer/mnb.jpg", :height => "150"}/
-      .col-2
+          %img{:alt => "", :src => "img/flyer/mnb.jpg",}/
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#"}
-          %img{:alt => "", :src => "img/flyer/forever.jpg", :height => "150"}/
-      .col-2
+          %img{:alt => "", :src => "img/flyer/forever.jpg",}/
+      .col-4.col-sm-2
         %a.thumbnail.gsdisplay{:href => "#"}
-          %img{:alt => "", :src => "img/flyer/freshers.png", :height => "150"}/
+          %img{:alt => "", :src => "img/flyer/freshers.png",}/
 #whygotag
   .container
     %h2 Why we think you will love GoTag
     %p
       Beautifully simple features that you will actually use.
-#features
+#indexFeatures
   .container
     .row.featureslist
       .col-6.col-sm-3.media
@@ -104,28 +75,24 @@
           .description
             %h4.media-heading Discover
             %p Learn what's going on nearby and find new trending events.
-      / col3
       .col-6.col-sm-3.media
         .mediabox
           %i.search.media-object.pull-left
           .description
             %h4.media-heading Recommendations
             %p In a new city? Let us suggest you events we think you might like.
-      / col3
       .col-6.col-sm-3.media
         .mediabox
           %i.social.media-object.pull-left
           .description
             %h4.media-heading Social
             %p Keep up with your friends by sharing your plans and see where your friends are going.
-      / col3
       .col-6.col-sm-3.media
         .mediabox
           %i.purchase.media-object.pull-left
           .description
             %h4.media-heading Purchase
             %p Gone are the days of printing paper e-tickets, purchase your tickets on the go.
-      / col3
     / row
   / container
 / servicewrap
