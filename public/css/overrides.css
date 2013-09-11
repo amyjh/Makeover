@@ -29,6 +29,10 @@ body {
   padding: 0 0 80px;
 }
 
+.page {
+  margin-top: 20px;
+}
+
 h1, h2{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -201,7 +205,6 @@ li a:hover{
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     border-radius: 9px;
-    text-shadow: 1px 1px 1px #131414
   }
   
   .user a.user-login:hover {

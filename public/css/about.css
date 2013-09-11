@@ -32,10 +32,3 @@ a.thumbnail.face img{
 a.thumbnail.face:hover img{
 	opacity:0.9;
 }
-
-/*.thumbnail.face > img,
-.img-thumbnail {
-  display: inline-block;
-  height: 150px;
-  max-width: 100%;
-}*/
