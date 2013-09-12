@@ -1,13 +1,13 @@
 .top-nav.hfcontainer
   .nav#navbar-example.navbar.navbar-static{:role => "navigation"}
-    .navbar-header
-      %button.navbar-toggle{"data-target" => ".bs-js-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => "/"}
-        %img{:alt => "GoTag Logo", :src => "img/logo-150.png",}/
+    / .navbar-header
+    %button.navbar-toggle{"data-target" => ".bs-js-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+      %span.sr-only Toggle navigation
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    %a.navbar-brand{:href => "/"} 
+      %img{:alt => "GoTag Logo", :src => "img/logo-150.png",}/
     .collapse.navbar-collapse.bs-js-navbar-collapse
       %ul.nav.navbar-nav.leftlinks
         %li.dropdown
@@ -17,6 +17,7 @@
       %ul.nav.navbar-nav.navbar-right
         %li#fat-menu.dropdown
           %a#drop3.dropdown-toggle.accountmenu{"data-toggle" => "dropdown", :href => "#", :role => "button"}
+            %img{:src => "img/profile.jpg"}/
             My Account
             %b.caret
           %ul.dropdown-menu.accountmenudrop{"aria-labelledby" => "drop3", :role => "menu"}
@@ -29,7 +30,7 @@
             %li.divider{:role => "presentation"}
             %li{:role => "presentation"}
               %a{:href => "#", :role => "menuitem", :tabindex => "-1"} Log Out
-    .search-bar.collapsehide
-      .btn.glyphicon.glyphicon-search
-      .inputbar
-        %input.search_events_input{:placeholder => "What are you looking for?...", :type => "text"}/
+      .search-bar
+        .btn.glyphicon.glyphicon-search
+        .inputbar
+          %input.search_events_input{:placeholder => "What are you looking for?...", :type => "text"}/
