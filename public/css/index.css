@@ -1,15 +1,3 @@
-h2{
-  color: #666;
-}
-
-a.thumbnail.gsdisplay img{
-  height:100%;
-}
-
-a.thumbnail.gldisplay img{
-  height:100%;
-}
-
 /********** CAROUSEL **********/
 #indexCarousel .carousel-caption{
   background: 
@@ -127,6 +115,10 @@ a.thumbnail.gldisplay img{
   margin-bottom:35px;
 }
 
+#servicewrap h2{
+  color: #666;
+}
+
 /*******THUMBNAILS*********/
 #servicewrap a.thumbnail.gldisplay{
   /*height:315px;
@@ -167,6 +159,10 @@ a.thumbnail.gldisplay img{
 
 #whygotag{
   text-align:center;
+}
+
+#whygotag h2{
+  color: #666;
 }
 
 #indexFeatures{
