@@ -1,91 +1,35 @@
-.top-nav
-  .nav#navbar-example.navbar.navbar-default.navbar-static{:role => "navigation"}
+.top-nav.hfcontainer
+  .nav#navbar-example.navbar.navbar-static{:role => "navigation"}
     .navbar-header
       %button.navbar-toggle{"data-target" => ".bs-js-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "#"} Project Name
+      %a.navbar-brand{:href => "/"}
+        %img{:alt => "GoTag Logo", :src => "img/logo-150.png",}/
     .collapse.navbar-collapse.bs-js-navbar-collapse
-      %ul.nav.navbar-nav
+      %ul.nav.navbar-nav.leftlinks
         %li.dropdown
-          %a#drop1.dropdown-toggle{"data-toggle" => "dropdown", :href => "#", :role => "button"}
-            Dropdown
-            %b.caret
-          %ul.dropdown-menu{"aria-labelledby" => "drop1", :role => "menu"}
-            %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Action
-            %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Another action
-            %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Something else here
-            %li.divider{:role => "presentation"}
-            %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Separated link
+          %a{:href => "browse", :role => "menuitem", :tabindex => "-1"} Browse
         %li.dropdown
-          %a#drop2.dropdown-toggle{"data-toggle" => "dropdown", :href => "#", :role => "button"}
-            Dropdown 2
-            %b.caret
-          %ul.dropdown-menu{"aria-labelledby" => "drop2", :role => "menu"}
-            %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Action
-            %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Another action
-            %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Something else here
-            %li.divider{:role => "presentation"}
-            %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Separated link
+          %a{:href => "#", :role => "menuitem", :tabindex => "-1"} Sell Tickets
       %ul.nav.navbar-nav.navbar-right
         %li#fat-menu.dropdown
-          %a#drop3.dropdown-toggle{"data-toggle" => "dropdown", :href => "#", :role => "button"}
-            Dropdown 3
+          %a#drop3.dropdown-toggle.accountmenu{"data-toggle" => "dropdown", :href => "#", :role => "button"}
+            My Account
             %b.caret
-          %ul.dropdown-menu{"aria-labelledby" => "drop3", :role => "menu"}
+          %ul.dropdown-menu.accountmenudrop{"aria-labelledby" => "drop3", :role => "menu"}
             %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Action
+              %a{:href => "dashboard", :role => "menuitem", :tabindex => "-1"} Dashboard
             %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Another action
+              %a{:href => "tickets", :role => "menuitem", :tabindex => "-1"} My Tickets
             %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Something else here
+              %a{:href => "account", :role => "menuitem", :tabindex => "-1"} My Account
             %li.divider{:role => "presentation"}
             %li{:role => "presentation"}
-              %a{:href => "http://twitter.com/fat", :role => "menuitem", :tabindex => "-1"} Separated link
-
-
-/ .navbar.navbar-fixed-top
-/ .col-10.col-sm-5.col-lg-4
-/ %a.navbar-toggle{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-/    /     %span.icon-bar
-/    /     %span.icon-bar
-/    /     %span.icon-bar
-/    /   %a.navbar-brand{:href => "/"}
-/    /     %img{:alt => "GoTag Logo", :border => "0", :src => "img/logo-150.png", :width => "80"}/
-/    /   .nav-collapse.collapse.mainlinks
-/    /     %ul.links.nav.navbar-nav
-/    /       %li
-/    /         %a{:href => "browse"} BROWSE
-/    /       %li
-/    /         %a{:href => "#"} SELL TICKETS
-    
-/    / .col-0.col-sm-4.col-lg-4
-/    /   .search-bar.collapsehide
-/    /     .btn.glyphicon.glyphicon-search
-/   /     %input.search_events_input{:placeholder => "What are you looking for?...", :type => "text"}/
-    
-/    / .col-2.col-sm-3.col-lg-4
-/   / .pull-right
-/    /   .nav-collapse.collapse
-/   /     %ul.user.nav.navbar-nav
-/    /       %li.dropdown
-/   /         %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#", :role => "button"}
-/    /           %img{class: "profile-picture", :alt => "User Profile Picture", :border => "0", :src => "img/profile.jpg",}/
-/    /           %p Amy
-/    /           %b.caret
-/    /         %ul.dropdown-menu
-/    /           %li
-/    /             %a{:href => "dashboard"} Dashboard
-/    /           %li
-/    /             %a{:href => "account"} Tickets
-  
+              %a{:href => "#", :role => "menuitem", :tabindex => "-1"} Log Out
+    .search-bar.collapsehide
+      .btn.glyphicon.glyphicon-search
+      .inputbar
+        %input.search_events_input{:placeholder => "What are you looking for?...", :type => "text"}/

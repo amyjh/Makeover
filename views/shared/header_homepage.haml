@@ -1,21 +1,21 @@
-.top-nav
-  .navbar.navbar-fixed-top
-    %a.navbar-toggle{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-      %span.icon-bar
-      %span.icon-bar
-      %span.icon-bar
-    %a.navbar-brand{:href => "/"}
-      %img{:alt => "GoTag Logo", :border => "0", :src => "img/logo-150.png", :width => "80"}/
-    .nav-collapse.collapse
-      %ul.links.nav.navbar-nav
+.top-nav.hfcontainer
+  .nav#navbar-example.navbar.navbar-static{:role => "navigation"}
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".bs-js-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "/"}
+        %img{:alt => "GoTag Logo", :src => "img/logo-150.png",}/
+    .collapse.navbar-collapse.bs-js-navbar-collapse
+      %ul.nav.navbar-nav.leftlinks
         %li
-          %a{:href => "browse"} BROWSE
+          %a{:href => "browse", :role => "menuitem", :tabindex => "-1"} Browse
         %li
-          %a{:href => "#"} SELL TICKETS
-    
-    .pull-right
-      .user
-        %a.user-login{:href => "/signin"} LOG IN
-        %a.user-login{:href => "/signin"} SIGN UP
-        
-        
+          %a{:href => "#", :role => "menuitem", :tabindex => "-1"} Sell Tickets
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "#"} Log In
+        %li
+          %a{:href => "#"} Sign Up
