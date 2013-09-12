@@ -82,6 +82,8 @@ li a:hover{
 
 .container {
   max-width:940px;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 .hfcontainer {

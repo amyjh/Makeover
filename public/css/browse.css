@@ -1,6 +1,9 @@
 .browse .event-tile {
-  min-height: 390px;
+  /*min-height: 420px;*/
+  height:420px;
+  overflow:hidden;
   background-color: #ffffff;
+  /*height:100%;*/
 }
 
 .browse .event-tile:hover {
@@ -42,5 +45,23 @@
 .browse .event-tile .date p.eventmonth {
   font-size: 10px;
   text-align: center;
-  
+}
+
+@media screen and (max-width: 768px) {
+  .browse .event-tile.thumbnail img{
+    padding-left:5%;
+    padding-right:5%;
+  }
+
+  .browse .event-tile a {
+    font-size:12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .browse .event-tile{
+    padding-left:5px;
+    padding-right:5px;
+    height:300px;
+  }
 }
