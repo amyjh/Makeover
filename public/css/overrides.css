@@ -407,6 +407,10 @@ li a:hover{
 
 #footerwrap .footer-row{
   padding-top:25px;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left:0px;
+  margin-right:0px;
 }
 
 #footerwrap h4 {
