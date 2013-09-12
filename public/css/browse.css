@@ -1,15 +1,15 @@
 .browse .event-tile {
   /*min-height: 420px;*/
-  height:420px;
+  height:410px;
   overflow:hidden;
   background-color: #ffffff;
   /*height:100%;*/
 }
 
 .browse .event-tile:hover {
-  -webkit-box-shadow: 0px 0px 8px #21b6e8;
-  -moz-box-shadow: 0px 0px 8px #21b6e8;
-  box-shadow: 0px 0px 8px #21b6e8;
+  -webkit-box-shadow: 0px 0px 4px #E74C3C;
+  -moz-box-shadow: 0px 0px 4px #E74C3C;
+  box-shadow: 0px 0px 4px #E74C3C;
 }
 
 .browse .thumbnail {
@@ -22,7 +22,9 @@
 .browse .thumbnail h3 {
   margin-top: 0;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 1.1em;
+  font-weight:bold;
+  color:#333;
 }
 
 .browse .event-tile .date {
@@ -47,6 +49,32 @@
   text-align: center;
 }
 
+.browse .thumbnail .caption {
+  margin-top:7px;
+}
+
+.browse .thumbnail .caption .btncontainer {
+  position:absolute;
+  left:50%;
+  bottom:25px;
+}
+
+.browse .thumbnail .caption a {
+  position:relative;
+  left:-50%;
+}
+
+.browse .event-tile p.venue {
+  display:inline;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
 @media screen and (max-width: 768px) {
   .browse .event-tile.thumbnail img{
     padding-left:5%;
@@ -63,5 +91,13 @@
     padding-left:5px;
     padding-right:5px;
     height:300px;
+  }
+
+  .browse .thumbnail h3 {
+  font-size: 0.9em;
+  }
+
+  .browse .thumbnail p {
+  font-size: 0.85em;
   }
 }
