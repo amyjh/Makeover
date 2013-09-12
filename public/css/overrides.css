@@ -32,7 +32,7 @@ body {
   /* Negative indent footer by its height */
   /*margin: 20px auto -105px;*/
   /* Pad bottom by footer height */
-  padding: 0px 0 80px;
+  /*padding: 0px 0 80px;*/
 }
 
 h1, h2{
@@ -396,7 +396,7 @@ li a:hover{
 
 #footerwrap {
   width: 100%;
-  height:105px;
+  min-height:95px;
   background: #fbfbfb;
   padding-bottom: 45px;
   text-align:center;
@@ -405,72 +405,71 @@ li a:hover{
   margin-top: 40px;
 }
 
-#footerwrap .container{
-  margin-top: 20px;
-  max-width:none;
-  padding-left:30px;
-  padding-right:30px;
-}
-
-#footerwrap h2 {
-  text-align:left;
-  margin-left:5px;
-  border-left:10px #357EBD solid;
-  padding-left:3px;
-  margin-bottom:40px;
-  color:#fff;
-}
-
-#footerwrap h3 {
-  font-size: 18px;
-  margin-top:12px;
-  color:#707070;
+#footerwrap .footer-row{
+  padding-top:25px;
 }
 
 #footerwrap h4 {
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top:0px;
+  margin-bottom:10px;
   font-size: 13px;
+}
+
+#footerwrap ul{
+  -webkit-padding-start: 0px;
 }
 
 #footerwrap li{
   display:inline;
 }
 
-#footeerwrap ul.ftitle{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+#footerwrap ul li {
+  display:block;
 }
 
-#footerwrap ul.ftitle li {
-  float: left;
-  margin-right: 30px;
-  width: 105px;
-  text-align: left;
+#footerwrap ul.fflist {
+  text-align:left;
+}
+
+#footerwrap li.ftitle {
   text-transform: uppercase;
+  margin-bottom:10px;
+  font-size:13px;
+  font-weight:bold;
 }
 
-#footerwrap ul.fitems {
-  height: 2em;
-  display: inline-block;
-  margin-top: 10px !important;
-  -webkit-padding-start:0px;
-}
-
-#footerwrap ul.fitems li a {
-  float: left;
-  width: 85px;
+#footerwrap ul.fcol li a {
   color: #999999;
   font-size: 12px;
-  text-align: left;
   margin-top: 5px;
   text-transform: none;
-  margin-right:30px;
 }
 
-#footerwrap ul.fitems li a:hover {
-  color: #999999;
+#footerwrap .collapse-note {
+  text-align:center;
+  margin-top:10px;
+}
+
+@media screen and (max-width: 768px) {
+  #footerwrap .contactus {
+      display: none !important;
+  }
+
+  #footerwrap ul.fflist {
+    padding-top:10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #footerwrap ul.fflist {
+    padding-left:50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #footerwrap .collapse-note {
+    display: none !important;
+  }
 }
 
 /***********CONTENT PAGES************/

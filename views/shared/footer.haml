@@ -1,43 +1,48 @@
 #footerwrap
-  .container
-    .row
-      .col-lg-2
+  .hfcontainer
+    .row.footer-row
+      .col-sm-2.col-lg-2.col-12
         .fb-like{"data-href" => "http://facebook.com/gotagin", "data-layout" => "button_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "100"}
         %a.twitter-follow-button{"data-show-count" => "false", :href => "https://twitter.com/gotagin"} Follow @gotagin
-      .col-lg-1
-      .col-lg-6
-        %ul.ftitle
-          %li 
-            GoTag
-            %ul.fitems
+      .col-sm-8.col-lg-8.col-12
+        %ul.fflist
+          %li.first-child.col-6.col-sm-3
+            %ul.fcol
+              %li.ftitle
+                GoTag
               %li 
                 %a{:href => "#"} About Us
               %li 
                 %a{:href => "#"} Press
-          %li 
-            For Partners
-            %ul.fitems
+          %li.col-6.col-sm-3
+            %ul.fcol
+              %li.ftitle
+                For Partners
               %li 
                 %a{:href => "#"} Get Started
               %li
                 %a{:href => "#"} Pricing
-          %li 
-            Legal
-            %ul.fitems
+          %li.col-6.col-sm-3
+            %ul.fcol
+              %li.ftitle
+                Legal
               %li 
                 %a{:href => "#"} Terms
               %li 
                 %a{:href => "#"} Privacy
-          %li 
-            Help
-            %ul.fitems
+          %li.last-child.col-6.col-sm-3
+            %ul.fcol
+              %li.ftitle
+                Help
               %li
                 %a{:href => "#"} Refunds
               %li
-                %a{:href => "#"} FAQs
-      .col-lg-3
-        %h4 Lovingly crafted in London and Bath.
+                %a{:href => "#"} Support
+          %li.col-12.collapse-note
+            %h4 © 2013 GoTag Ltd All Rights Reserved
+      .col-sm-2.col-lg-2.contactus
         %h4 
           Please 
           %a{:href => "mailto:support@gotag.in"} contact us
           , we love hearing from you!
+        %h4 © 2013 GoTag Ltd. All Rights Reserved.
