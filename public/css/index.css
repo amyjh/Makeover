@@ -10,7 +10,9 @@
 }
 
 #indexCarousel .carousel-caption h1{
-  font-weight:600;
+  font-weight:400;
+  margin: 0.4em 0;
+  font-size:55px;
 }
 
 #indexCarousel .carousel-inner {
@@ -18,7 +20,7 @@
 }
 
 #indexCarousel .carousel-inner .item{
-  height:600px;
+  height:650px;
   max-width:100%;
   margin-left:auto;
   margin-right:auto;
@@ -39,15 +41,19 @@
   height: 48px;
   font-size: 14px;
   border-radius: 8px;
-  /*color:#bbc0c2;*/
   border-color: #fbfbfb;
   background-color: #fbfbfb;
   color:#fff;
 }
 
+#indexCarousel .carousel-inner .search-bar:hover {
+  -webkit-box-shadow: 0px 0px 18px #3498db;
+  -moz-box-shadow: 0px 0px 18px #3498db;
+  box-shadow: 0px 0px 18px #3498db;
+}
+
 #indexCarousel .carousel-inner .search-bar .btncontainer {
   float:right;
-  background-color:#3498db;
   border-top-right-radius:8px;
   border-bottom-right-radius:8px;
   height:100%;
@@ -62,11 +68,11 @@
   -moz-box-shadow: none;
   box-shadow: none;
   color: white;
-  /*color: #131414;*/
   font-size:25px;
   padding: 5px 0%;
   margin-top:5px;
   width:100%;
+  color:#3498db;
 }
 
 #indexCarousel .carousel-inner .search-bar .glyphicon:hover{
@@ -89,38 +95,38 @@
 #indexCarousel .carousel-inner .search-bar:hover input.search_events_input{ color:#131414; }
 #indexCarousel .carousel-inner .search-bar input.search_events_input:hover { color:#131414; }
 
-#indexCarousel .carousel-inner .search-bar ::-webkit-input-placeholder { color:#bbc0c2; }
-#indexCarousel .carousel-inner .search-bar ::-moz-placeholder { color:#bbc0c2; }
-#indexCarousel .carousel-inner .search-bar :-ms-input-placeholder { color:#bbc0c2; }
-#indexCarousel .carousel-inner .search-bar :-moz-placeholder { color:#bbc0c2; }
+#indexCarousel .carousel-inner .search-bar ::-webkit-input-placeholder { color:#999;}
+#indexCarousel .carousel-inner .search-bar ::-moz-placeholder { color:#999;}
+#indexCarousel .carousel-inner .search-bar :-ms-input-placeholder { color:#999;}
+#indexCarousel .carousel-inner .search-bar :-moz-placeholder { color:#999;}
 
 #indexCarousel .carousel-inner .search-bar:hover ::-webkit-input-placeholder { color: #131414; }
 #indexCarousel .carousel-inner .search-bar:hover :-moz-placeholder { color: #131414; }
 #indexCarousel .carousel-inner .search-bar:hover ::-moz-placeholder { color: #131414; }
 #indexCarousel .carousel-inner .search-bar:hover :-ms-input-placeholder { color: #131414; }}
 
-/********** SERVICEWRAP **********/
+/********** indexServicewrap **********/
 
-#servicewrap{
+#indexServicewrap{
   padding-top:10px;
   margin-bottom:35px;
 }
 
-#servicewrap .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+#indexServicewrap .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
   padding-left:5px;
   padding-right:5px;
 }
 
-#servicewrap .row{
+#indexServicewrap .row{
   margin-bottom:35px;
 }
 
-#servicewrap h2{
+#indexServicewrap h2{
   color: #666;
 }
 
 /*******THUMBNAILS*********/
-#servicewrap a.thumbnail.gldisplay{
+#indexServicewrap a.thumbnail.gldisplay{
   /*height:315px;
   width:100%; 
   text-align:center;*/
@@ -130,12 +136,13 @@
   padding-bottom: 100%;
 }
 
-#servicewrap a.thumbnail.gldisplay img{
+#indexServicewrap a.thumbnail.gldisplay img{
   height:97%;
   width:100%;
+  padding:0.5%;
 }
 
-#servicewrap a.thumbnail.gsdisplay{
+#indexServicewrap a.thumbnail.gsdisplay{
   /*height:135px; 
   width:135px;
   text-align:center;*/
@@ -146,23 +153,25 @@
   padding-bottom: 100%;
 }
 
-#servicewrap a.thumbnail.gsdisplay img{
+#indexServicewrap a.thumbnail.gsdisplay img{
   height:95%;
   width:100%;
+  padding:1%;
 }
 
-#servicewrap a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
+#indexServicewrap a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   margin-bottom:0;
 }
 
 /**************WHY GOTAG****************/
 
-#whygotag{
+#indexWhyGotag{
   text-align:center;
 }
 
-#whygotag h2{
-  color: #666;
+#indexWhyGotag h2{
+  /*color: #666;*/
+  font-weight:bold;
 }
 
 #indexFeatures{
@@ -183,6 +192,11 @@
   width:60%;
   float:left;
 }
+
+#indexFeatures .description h4{
+  font-weight:bold;
+}
+
 #indexFeatures .featureslist i{
   /*background-position: 16px 6px;*/
   /*float: left;*/
