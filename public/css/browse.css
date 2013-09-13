@@ -1,4 +1,5 @@
-.browse .event-tile {
+/***** EVENT TILE *******/
+.page.browsepage .event-tile {
   /*min-height: 420px;*/
   height:410px;
   overflow:hidden;
@@ -6,98 +7,100 @@
   /*height:100%;*/
 }
 
-.browse .event-tile:hover {
+.page.browsepage .event-tile:hover {
   -webkit-box-shadow: 0px 0px 4px #E74C3C;
   -moz-box-shadow: 0px 0px 4px #E74C3C;
   box-shadow: 0px 0px 4px #E74C3C;
 }
 
-.browse .thumbnail {
-  border-radius: 0;
-  border: 1px solid #DDDDDD;
-  margin: 0 10px 10px 0;
-  padding:5px;
-}
-
-.browse .thumbnail h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 1.1em;
-  font-weight:bold;
-  color:#333;
-}
-
-.browse .event-tile .date {
-  background-color: rgba(0, 0, 0, 0.88);
-  color: white;
-  position: absolute;
-  top: 15px;
-  left: 40px;
-  padding: 5px 10px;
-}
-
-.browse .event-tile .date p {
-  margin: 0;
-}
-
-.browse .event-tile .date p.eventday {
-  font-size: 25px;
-}
-
-.browse .event-tile .date p.eventmonth {
-  font-size: 10px;
-  text-align: center;
-}
-
-.browse .thumbnail .caption {
-  margin-top:7px;
-}
-
-.browse .thumbnail .caption .btncontainer {
-  position:absolute;
-  left:50%;
-  bottom:25px;
-}
-
-.browse .thumbnail .caption a {
-  position:relative;
-  left:-50%;
-}
-
-.browse .event-tile p.venue {
-  display:inline;
-}
-
-.ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-}
-
-@media screen and (max-width: 768px) {
-  .browse .event-tile.thumbnail img{
-    padding-left:5%;
-    padding-right:5%;
+  /***** THUMBNAIL & DATE *******/
+  .page.browsepage .thumbnail {
+    border-radius: 0;
+    border: 1px solid #DDDDDD;
+    margin: 0 10px 10px 0;
+    padding:5px;
   }
 
-  .browse .event-tile a {
-    font-size:12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .browse .event-tile{
-    padding-left:5px;
-    padding-right:5px;
-    height:300px;
+  .page.browsepage .thumbnail h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight:bold;
+    color:#555;
   }
 
-  .browse .thumbnail h3 {
-  font-size: 0.9em;
+  .page.browsepage .event-tile .date {
+    background-color: rgba(0, 0, 0, 0.88);
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    padding: 5px 10px;
   }
 
-  .browse .thumbnail p {
-  font-size: 0.85em;
+  .page.browsepage .event-tile .date p {
+    margin: 0;
   }
-}
+
+  .page.browsepage .event-tile .date p.eventday {
+    font-size: 25px;
+  }
+
+  .page.browsepage .event-tile .date p.eventmonth {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  /********* CAPTION *********/
+
+  .page.browsepage .thumbnail .caption {
+    margin-top:7px;
+  }
+
+  .page.browsepage .thumbnail .caption a.event-title{
+    text-decoration:none;
+  }
+
+  .page.browsepage .thumbnail .caption .btncontainer {
+    position:absolute;
+    left:50%;
+    bottom:25px;
+  }
+
+  .page.browsepage .thumbnail .caption .btncontainer a {
+    position:relative;
+    left:-50%;
+  }
+
+  .page.browsepage .event-tile p.venue {
+    display:inline;
+  }
+
+  /******** SCREEN RESOLUTION *******/
+
+  @media screen and (max-width: 768px) {
+    .page.browsepage .event-tile.thumbnail img{
+      padding-left:5%;
+      padding-right:5%;
+    }
+
+    .page.browsepage .event-tile a {
+      font-size:12px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .page.browsepage .event-tile{
+      padding-left:5px;
+      padding-right:5px;
+      height:300px;
+    }
+
+    .page.browsepage .thumbnail h3 {
+    font-size: 0.9em;
+    }
+
+    .page.browsepage .thumbnail p {
+    font-size: 0.85em;
+    }
+  }

@@ -1,0 +1,7 @@
+.page.presspage blockquote a img{
+  max-height:70px;
+}
+
+.page.presspage cite{
+  display:block;
+}

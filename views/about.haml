@@ -1,42 +1,41 @@
 %link{ :href => "css/about.css", :rel => "stylesheet" }/
 !!!
 
-#aboutimage{:style => "background-image:url('img/night_city.jpg'); background-color:#cccccc; width:100%; height: 300px;"}
-	.container
-		.col-lg-12
-			#abouttitle.boxcolor
-				%h1 About Us
-#aboutwrap
-	.row
-		.container
-			.col-lg-12
-				.container
-					.row
-						.col-lg-12
-							%h3 Going places is fun
-							%p To kill Fatsoma
-					/row
-					%br/
-					.row
-						.col-lg-12
-							%h3 The Team
-							%p GoTag is lovingly crafted in Bath and London.
-							.col-lg-4
-								%p Ollie
-								%a.thumbnail.face{:href => "#",}
-									%img{:alt => "Ollie Marshall", :src => "img/ollie.png", :height => "150"}/
-							.col-lg-4
-								%p Amy
-								%a.thumbnail.face{:href => "#",}
-									%img{:alt => "Ollie Marshall", :src => "img/amy.png", :height => "150"}/
-							.col-lg-4
-								%p David
-								%a.thumbnail.face{:href => "#",}
-									%img{:alt => "Ollie Marshall", :src => "img/dmr.png", :height => "150"}/
-					/row
-					%br/
-					.row
-						.col-lg-12
-							%h3 Contact Us
-							%p If you like what you see, email us at support@gotag.in or tweet us @gotagin. We would love to hear from you!
-					/row
+.page.aboutpage.generalpage
+  .container.maincontainer
+    .row.pagehead
+      .caption-positioning
+        #pagehead-caption
+          %h1 About Us
+      %img{:alt => "", :src => "img/street2.jpg"}/
+    .container.mainfeed.demowrap.main
+      .col-12
+        .row.content-row
+          %h2 Going places is fun
+          %p.general-description Our mission is to make it simple for you to find the best places to go.
+        .row.content-row
+          %h2 The Team
+          %p.general-description GoTag is lovingly crafted in Bath and London.
+        .row.content-row.team-row
+          .col-4
+            %a.thumbnail.face{:href => "http://uk.linkedin.com/in/olliemarsh/",}
+              %img.img-circle{:alt => "Ollie Marshall", :src => "img/ollie.jpg",}/
+            %h4 Ollie
+            %h5 Co-Founder, Tech
+          .col-4
+            %a.thumbnail.face{:href => "http://uk.linkedin.com/in/hunteramy/",}
+              %img.img-circle{:alt => "Ollie Marshall", :src => "img/amy.jpg",}/
+            %h4 Amy
+            %h5 Co-Founder, Biz
+          .col-4
+            %a.thumbnail.face{:href => "http://uk.linkedin.com/in/davidpmr/",}
+              %img.img-circle{:alt => "Ollie Marshall", :src => "img/dmr.jpg",}/
+            %h4 David
+            %h5 Advisor
+        .row.content-row
+          %h2 Contact Us
+          %p If you like what you see, email us at 
+          %a{:href => "mailto:support@gotag.in"} support@gotag.in
+          %p or tweet us 
+          %a{:href => "https://twitter.com/gotagin"} @gotagin
+          %p , we would love to hear from you!

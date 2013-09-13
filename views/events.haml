@@ -2,185 +2,146 @@
 %script{:src => "http://maps.google.com/maps/api/js?sensor=true", :type => "text/javascript"}
 %script{:src => "http://cdn.jsdelivr.net/gmaps/0.3.1/gmaps.min.js", :type => "text/javascript"}
 
-%br
-.row
-  .container
-    .col-lg-12.col-md-12.main
-      / %h2 A-List Bath presents...
-      .row.pagehead
-        /%img{:alt => "Cover Image", :src => "img/night_city.jpg", :style => "min-width: 714px; min-height:264px; max-width: 841px; max-height:315px;"}/
-        / #event-caption
-        %div{:style => "position: absolute; left: 50%;"}
-          #event-caption{:style => "position: relative; left: -50%;"}
-            %h1 A-Level Results Party
-            %span.glyphicon.glyphicon-calendar
-            %h4 1st June 2013 @ 7:00pm
-            %br
-            %span.glyphicon.glyphicon-map-marker
-            %h4 Second Bridge, Bath, BA1 2EX
-        %img{:alt => "", :src => "img/street2.jpg"}/
-    .col-lg-12.mainfeed.demowrap.main
-      .row
-        .col-lg-4.leftpane
-          .flyercontainer.tbox
+.page.eventspage
+  .container.maincontainer
+    .row.pagehead
+      .caption-positioning
+        #event-caption
+          %h1 A-Level Results Party some stupid long name
+          %span.glyphicon.glyphicon-calendar
+          %h4 1st June 2013 @ 7:00pm
+          %br
+          %span.glyphicon.glyphicon-map-marker
+          %h4 Second Bridge, Bath, BA1 2EX
+      %img{:alt => "", :src => "img/street2.jpg"}/
+    .container.mainfeed.demowrap.main
+      .col-sm-4.col-12.leftpane
+        / .flyercontainer.tbox
+        /   %a.thumbnail.flyer{:href => "#"}
+        /     %img{:alt => "", :src => "img/flyer/monday.jpg",}
+        / .feednavbar
+        / .cbox.eventsummary
+        /   %p A-List presents... 
+        /   %h2 A-Level Results Party
+        /   .glyphblock
+        /     %span.glyphicon.glyphicon-calendar
+        /     %p.afterglyph 1st June 2013 7:00 pm - 2nd June 2013 2:00am
+        /   .glyphblock 
+        /     %span.glyphicon.glyphicon-map-marker 
+        /     %p.afterglyph Second Bridge, Bath, BA1 2EX
+        / .tbox
+        /   .fb-like{"data-href" => "http://developers.facebook.com/docs/reference/plugins/like", "data-layout" => "button_count", "data-send" => "true", "data-show-faces" => "true", "data-width" => "450"}
+        /   %br
+        /   %a.twitter-share-button{:href => "https://twitter.com/share"} Tweet
+        .col-sm-12.col-3
+          .flyercontainer
             %a.thumbnail.flyer{:href => "#"}
               %img{:alt => "", :src => "img/flyer/monday.jpg",}
+        .col-sm-12.col-9
           .feednavbar
           .cbox.eventsummary
             %p A-List presents... 
-            %h2 A-Level Results Party
+            %h2 A-Level Results Party some stupid long name
             .glyphblock
               %span.glyphicon.glyphicon-calendar
               %p.afterglyph 1st June 2013 7:00 pm - 2nd June 2013 2:00am
             .glyphblock 
               %span.glyphicon.glyphicon-map-marker 
               %p.afterglyph Second Bridge, Bath, BA1 2EX
-          .tbox
+          .tbox.sharelinks
             .fb-like{"data-href" => "http://developers.facebook.com/docs/reference/plugins/like", "data-layout" => "button_count", "data-send" => "true", "data-show-faces" => "true", "data-width" => "450"}
             %br
             %a.twitter-share-button{:href => "https://twitter.com/share"} Tweet
-
-        .col-lg-8.rightpane
-          %h2.scroll-headline Tickets
-          .buytable.bordered
-            %table.table
-              %colgroup
-                %col{:span => "1", :style => "width: 50%;"}/
-                %col{:span => "1", :style => "width: 25%;"}/
-                %col{:span => "1", :style => "width: 25%;"}/
-              %thead
-                %tr
-                  %th Ticket Type
-                  %th Price
-                  %th Quantity
-              %tbody
-                %tr
-                  %td
-                    Early Bird
-                  %td
-                    £3 + £0.20 
-                    %span.bfee BF
-                  %td.buylinks
-                    #quantity{}
-                      %input.decrement.btn.qbtn{:name => "subtract", :type => "button", :value => "-"}/
-                      %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input.increment.qbtn{:name => "add", :type => "button", :value => "+"}/
-                %tr
-                  %td
-                    Student
-                  %td
-                    £3 + £0.20
-                    %span.bfee BF
-                  %td.buylinks
-                    #quantity{}
-                      %input.decrement.btn.qbtn{:name => "subtract", :type => "button", :value => "-"}/
-                      %input#qty{:name => "qty", :type => "text", :value => "0"}/
-                      %input.increment.qbtn{:name => "add", :type => "button", :value => "+"}/
-                %tr
-                  %td
-                    General Admission
-                  %td
-                    £4 + £0.20
-                    %span.bfee BF
-                  %td.buylinks
-                    .row
-                      .col-lg-6
-                        .input-group
-                          %span.input-group-btn
-                            %a.btn.btn-red -
-                          %input.form-control{:type => "text"}/
-                          %span.input-group-btn
-                            %button.btn.btn-red{:type => "button"} +
-                          
-
-                %tr.pprow
-                  %td{:colspan => "3"}
-                    %div{:align => "right"}
-                      %img{:alt => "Gotag-cards", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/gotag-cards-88de37efa66edd0ac5fb2376090f2d15.png"}/
-                      %img{:alt => "Paypal_express", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/payment_gateway_logos/paypal_express-2188c870f7021ad9be6c34e23ce789eb.gif"}/
-                      %input.btn.btn-blue{:name => "commit", :type => "submit", :value => "Purchase"}/
-                      
-          %h2.scroll-headline Event Description
-          %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          %a{:href => "#"} read more...
-          %h2.scroll-headline Important Info
-          %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          %p General terms and conditions apply
-          %p R.O.A.R. [rights of admission reserved]
-          %p No entry to under 18s unless otherwise specified
-          %p No admission without a valid ticket
-          %a{:href => "#"} GoTag terms and conditions...
-          %h2.scroll-headline Social
-          .fb-comments{"data-href" => "http://example.com", "data-width" => "470"}
-          %br/
-          .fb-like{"data-href" => "http://developers.facebook.com/docs/reference/plugins/like", "data-layout" => "button_count", "data-send" => "true", "data-show-faces" => "true", "data-width" => "450"}
-          %a.twitter-share-button{:href => "https://twitter.com/share"} Tweet
-          
-      .row.mapwrap
-        / %h2.scroll-headline Map
-        #map
+      .col-sm-8.col-12.rightpane
+        %h2.scroll-headline Tickets
+        .buytable.bordered
+          %table.table
+            %colgroup
+              %col.coltype{:span => "1",}/
+              %col.colprice{:span => "1",}/
+              %col.colqty{:span => "1",}/
+            %thead
+              %tr
+                %th Ticket Type
+                %th Price
+                %th Quantity
+            %tbody
+              %tr
+                %td
+                  Early Bird
+                %td
+                  £3 + £0.20 
+                  %span.bfee BF
+                %td.buylinks
+                  #quantity{}
+                    %input.decrement.btn.btn-red.wbtn{:name => "subtract", :type => "button", :value => "-"}/
+                    %input#qty{:name => "qty", :type => "text", :value => "0"}/
+                    %input.increment.btn.btn-red.wbtn{:name => "add", :type => "button", :value => "+"}/
+              %tr
+                %td
+                  Student
+                %td
+                  £3 + £0.20
+                  %span.bfee BF
+                %td.buylinks
+                  #quantity{}
+                    %input.decrement.btn.btn-red.wbtn{:name => "subtract", :type => "button", :value => "-"}/
+                    %input#qty{:name => "qty", :type => "text", :value => "0"}/
+                    %input.increment.btn.btn-red.wbtn{:name => "add", :type => "button", :value => "+"}/
+              %tr
+                %td
+                  General Admission some silly long ticket type name
+                %td
+                  £4 + £0.20
+                  %span.bfee BF
+                %td.buylinks
+                  #quantity{}
+                    %input.decrement.btn.btn-red.wbtn{:name => "subtract", :type => "button", :value => "-"}/
+                    %input#qty{:name => "qty", :type => "text", :value => "0"}/
+                    %input.increment.btn.btn-red.wbtn{:name => "add", :type => "button", :value => "+"}/
+              %tr.pprow
+                %td{:colspan => "2"}
+                  %div{:align => "right"}
+                    %img{:alt => "Gotag-cards", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/gotag-cards-88de37efa66edd0ac5fb2376090f2d15.png"}/
+                    %img{:alt => "Paypal_express", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/payment_gateway_logos/paypal_express-2188c870f7021ad9be6c34e23ce789eb.gif"}/
+                %td{:colspan => "1"}
+                  %input.btn.btn-blue{:name => "commit", :type => "submit", :value => "Purchase"}/
+        %h2.scroll-headline Event Description
+        %p.scroll-description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        %a{:href => "#"} read more...
+        %h2.scroll-headline Important Info
+        %p.scroll-description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        %p General terms and conditions apply
+        %p R.O.A.R. [rights of admission reserved]
+        %p No entry to under 18s unless otherwise specified
+        %p No admission without a valid ticket
+        %a{:href => "#"} GoTag terms and conditions...
+        %h2.scroll-headline Social
+        .fb-comments{"data-href" => "http://example.com", "data-width" => "470"}
+        .sharelinksdiv
+          .sharelinks.fb-like{"data-href" => "http://developers.facebook.com/docs/reference/plugins/like", "data-layout" => "button_count", "data-send" => "true", "data-show-faces" => "true", "data-width" => "450"}
+          %a.sharelinks.twitter-share-button{:href => "https://twitter.com/share"} Tweet
         
-  /container
-/row
+    .row.mapwrap
+      / %h2.scroll-headline Map
+      #map
 
 :javascript
-  $('.demowrap').scrollNav({
-    location: "prependTo",
-    locationElem: ".feednavbar",
-    sections: '.scroll-headline',
-    titleText: '',
-    fixedMargin: -40
-  });
-  
-  // Move tickets nav item to end
-  $('a:contains("Tickets")').appendTo(".scroll-nav-list").addClass("buy-tickets-nav-btn");
-  
-  var $nav = $('.scroll-nav'),
-      $win = $(window),
-      navTop = $nav.offset().top,
-      onTop = false,
-      checkScheduled = false;
-
-  function checkNav() {
-    var top = $win.scrollTop();
-    if(navTop < top && !onTop) {
-      onTop = true;
-      $nav.show();
-      $nav.addClass('navbar navbar-fixed-top');
-      $nav.find('ul').addClass('nav navbar-nav');
-    } else if(navTop >= top && onTop) {
-      $nav.hide();
-      $nav.removeClass('navbar navbar-fixed-top');
-      $nav.find('ul').removeClass('nav navbar-nav');
-      onTop = false;
-    }
-  }
-
   $('.decrement').click(function() {
-    var qtyInput = $($(this).next()[0]);
-    var value = qtyInput.val();
-    if (value > 0) {
-      var newValue = parseInt(value) - 1;
+      var qtyInput = $($(this).next()[0]);
+      var value = qtyInput.val();
+      if (value > 0) {
+        var newValue = parseInt(value) - 1;
+        qtyInput.val(newValue);
+      }
+    })
+
+    $('.increment').click(function() {
+      var qtyInput = $($(this).prev()[0]);
+      var value = qtyInput.val();
+      var newValue = parseInt(value) + 1;
       qtyInput.val(newValue);
-    }
-  })
-
-  $('.increment').click(function() {
-    var qtyInput = $($(this).prev()[0]);
-    var value = qtyInput.val();
-    var newValue = parseInt(value) + 1;
-    qtyInput.val(newValue);
-  });
-
-  $win.on('scroll', function() {
-    if(!checkScheduled) {
-      checkScheduled = true;
-      setTimeout(function() {
-        checkNav();
-        checkScheduled = false;
-      }, 100);
-    }
-  });  
+    });
   map = new GMaps({
     div: '#map',
     lat: 51.375799,
@@ -188,3 +149,6 @@
     enableNewStyle: true,
     scrollwheel: false
   });
+
+  
+  

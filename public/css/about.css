@@ -1,34 +1,11 @@
-#abouttitle.boxcolor{
-	margin-top:150px;
-	clear: both;
-	opacity: 0.9;
-	background: #ec602f;
-	background: rgb(225,112,75);
-	background: rgba(225,112,75, 0.95);
+.page.aboutpage .team-row img{
+  max-height:150px;
 }
 
-#abouttitle h1 {
-font-family: 'Open Sans Condensed', sans-serif;
-font-weight: 500;
-font-size: 60px;
-color: #fff;
-padding: 20px;
-text-align:center;
+.page.aboutpage .team-row h4{
+  font-weight:bold;
 }
 
-#aboutwrap {
-	text-align:center;
-}
-
-a.thumbnail.face, a.thumbnail.face:hover {
-	color:none;
-	border:none;
-}
-
-a.thumbnail.face img{
-	height:150px;
-}
-
-a.thumbnail.face:hover img{
-	opacity:0.9;
+.page.aboutpage .row.content-row p{
+  display:inline;
 }

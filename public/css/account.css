@@ -1,40 +1,40 @@
-form{
+.page.accountpage form{
   margin-bottom:20px;
 }
 
-.controls select{
+.page.accountpage .controls select{
   float:left;
   margin-right: 5px;
 }
 
-.control-group{
+.page.accountpage .control-group{
   width:100%;
   clear: both; 
   float: left;
 }
 
-.btn.flbl{
+.page.accountpage .btn.flbl{
   width: 140px;
   margin-left: 155px;
 }
 
-p.flbl a{
+.page.accountpage p.flbl a{
   margin-left: 155px;
   color: #bdc3c7;
 }
 
-p.flbl {
+.page.accountpage p.flbl {
   margin-top:10px;
 }
 
-#user_birthday_3i {
-  width:30%;
+.page.accountpage #user_birthday_3i {
+  width:29%;
 }
 
-#user_birthday_2i {
-  width:30%;
+.page.accountpage #user_birthday_2i {
+  width:32%;
 }
 
-#user_birthday_1i {
-  width:30%;
+.page.accountpage #user_birthday_1i {
+  width:32%;
 }

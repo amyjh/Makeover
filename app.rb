@@ -34,4 +34,13 @@ class App < Sinatra::Base
   get '/checkout' do
     haml :checkout
   end
+
+  get '/press' do
+    haml :press
+  end
+  
+  get '/refunds' do
+    haml :refunds
+  end
+  
 end

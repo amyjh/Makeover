@@ -1,21 +1,18 @@
 %link{ :href => "css/tickets.css", :rel => "stylesheet" }/
 
-%br
-.row
+.page.ticketspage
   .container
-    .col-lg-12.col-md-12.maintitle.content-box
-      / %h2 A-List Bath presents...
+    .col-12.maintitle.content-box
       %h1 My Tickets
-.row
   .container.mainfeed
-    .contentpage.fulltpane
-      .alert.alert-block.boxed
+    .contentpage.col-12
+      .alert.alert-block
         %button.close{"data-dismiss" => "alert", :type => "button"} ×
         %h4 Welcome!
         %p These are your upcoming tickets, please download and print your tickets ready for inspection upon arrival at your event.
       .content-box
         %h3 My Upcoming Tickets
-        .buytable
+        .printtable
           %table.table.table-bordered.table-striped
             %tbody
               %tr
@@ -39,5 +36,3 @@
                   Earlybird
                 %td.printlink
                   %input.btn.btn-small.btn-blue{:name => "", :type => "submit", :value => "Print"}/
-
-%br

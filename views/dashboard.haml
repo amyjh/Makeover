@@ -1,21 +1,18 @@
 %link{ :href => "css/dashboard.css", :rel => "stylesheet" }/
 
-%br
-.row
+.page.dashboardpage
   .container
-    .col-lg-12.col-md-12.maintitle.content-box
-      / %h2 A-List Bath presents...
+    .col-12.maintitle.content-box
       %h1 My Dashboard
-.row
   .container.mainfeed
-    .col-lg-3.contentpage.leftpane
-      .content-box.acctdetails
+    .col-sm-3.col-12.contentpage.leftpane
+      .content-box.acctdetails.col-4.col-sm-12
         .acctimg.thumbnail
           %img{:alt => "", :src => "img/profile.jpg",}
         .acctname
           %h3 Amy Hunter
           %a{:href => "#"} Edit Profile
-      .content-box.socialnet
+      .content-box.socialnet.col-8.col-sm-12
         %h3 Social Networks
         %table.table
           %tbody
@@ -31,16 +28,16 @@
               %td
                 %img{:alt => "Urbantribe_icon", :src => "https://gotag-static.s3-eu-west-1.amazonaws.com/assets/urbantribe_icon-e93ecb46e2c6c4cee7a0324b93fb2df8.png", :width => "20"}/
               %td
-                %a.btn.btn-blue.btn-small{:href => "/users/auth/urbantribe"} Connect now
-    .col-lg-9.contentpage.rightpane
-      .alert.alert-block.boxed
+                %a.btn.btn-blue.btn-small{:href => "/users/auth/urbantribe"} Connect
+    .col-sm-9.col-12.contentpage.rightpane
+      .alert.alert-block
         %button.close{"data-dismiss" => "alert", :type => "button"} ×
         %h4 Welcome!
         %p This is your Dashboard, the place to download/print your upcoming tickets, edit your profile and much more.
       .content-box
         %a{:href => "#"}
           %h3 My Upcoming Tickets
-        .buytable
+        .printtable
           %table.table.table-bordered.table-striped
             %tbody
               %tr
@@ -64,7 +61,3 @@
                   Earlybird
                 %td.printlink
                   %input.btn.btn-small.btn-blue{:name => "", :type => "submit", :value => "Print"}/
-      / .content-box
-      /   %h3 News Feed
-
-%br

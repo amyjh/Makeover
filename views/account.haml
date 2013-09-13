@@ -1,21 +1,12 @@
 %link{ :href => "css/account.css", :rel => "stylesheet" }/
 
-%br
-.row
+.page.accountpage
   .container
-    .col-lg-12.col-md-12.maintitle.content-box
-      / %h2 A-List Bath presents...
+    .col-12.maintitle.content-box
       %h1 My Account
-.row
   .container.mainfeed
-    / .col-lg-4.contentpage.leftpane
-    /   .content.acctdetails.boxed
-    /     .acctimg.thumbnail
-    /       %img{:alt => "", :src => "img/profile.jpg",}
-    /     .acctname
-    /       %h3 Amy Hunter
-    .col-lg-12.contentpage.fullpane
-      .alert.alert-block.boxed
+    .col-12.contentpage
+      .alert.alert-block
         %button.close{"data-dismiss" => "alert", :type => "button"} ×
         %h4 Important!
         %p Please ensure your account information matches your identification for verification at the venue.
@@ -394,5 +385,3 @@
           %input.btn.btn-danger{:name => "", :type => "reset", :value => "Cancel"}/
           %p.flbl.note
             %a{"data-confirm" => "Are you sure?", "data-method" => "delete", :href => "/users", :rel => "nofollow"} Cancel my account
-
-%br

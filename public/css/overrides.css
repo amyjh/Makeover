@@ -3,23 +3,10 @@
   *= require_tree .
 */
 
-html {
-  height:100%;
-}
-
-body {
+html, body {
   height:100%;
   font-family: 'Oxygen', sans-serif;
   background-color: #f0f0f0;
-}
-
-@media (max-width: 768px) {
-  /*body {
-    padding-top: 110px;
-  }*/
-/*  #wrap {
-    padding-top: 110px;
-  }*/
 }
 
 .page{
@@ -38,10 +25,10 @@ body {
   min-height: 100%;
   height: auto !important;
   /* Negative indent footer by its height */
-  /*margin: 20px auto -95px;*/
-  /* Pad bottom by footer height */
-  /*padding: 0px 0 95px;*/
+  height: 100%;
+  margin: 0 auto -20px;
 }
+
 
 h1, h2{
   font-family: 'Lato', sans-serif;
@@ -327,23 +314,7 @@ li a:hover{
 
   /************ LOGGED OUT VIEW *********/
 
-  .top-nav ul.nav.navbar-nav.navbar-right.user li a{
-    padding: 8px 10px;
-    margin: 5px;
-    border: 2px solid white;
-    display: inline-block;
-    color:white;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-  }
-  
-  .top-nav ul.nav.navbar-nav.navbar-right.user li a:hover {
-    background:white;
-    color:#131414;
-    text-decoration: none;
-  }
-
+  /* see screen resolution section */
 
   /************ SCREEN RESOLUTIONS ***********/
     
@@ -405,14 +376,44 @@ li a:hover{
       }
     }
 
+    /********* LOGGED OUT VIEW *********/
+
+    @media screen and (min-width: 768px) {
+      .top-nav ul.nav.navbar-nav.navbar-right.user li a{
+        padding: 8px 10px;
+        margin: 5px;
+        border: 2px solid white;
+        display: inline-block;
+        color:white;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        border-radius: 9px;
+      }
+      
+      .top-nav ul.nav.navbar-nav.navbar-right.user li a:hover {
+        background:white;
+        color:#131414;
+        text-decoration: none;
+      }
+    }
+
+    /*@media screen and (width: 768px) {
+      .top-nav .search-bar {
+          display: block !important;
+      }
+    }*/
+    
+
+
 
 /********** FOOTER WRAP **********/
 
+
 #footerwrap {
   width: 100%;
-  min-height:95px;
+  /*min-height:150px;*/
   background: #fbfbfb;
-  padding-bottom: 45px;
+  padding-bottom: 15px;
   text-align:center;
   color:#474747;
   border-top:solid 1px #ddd;
@@ -574,7 +575,7 @@ li a:hover{
   .btn-blue {
     color: #ffffff;
     background-color: #3498db;
-    border-color: #357ebd;
+    border-color: #2980B9;
   }
 
   .btn-blue:hover,
@@ -583,8 +584,8 @@ li a:hover{
   .btn-blue.active,
   .open .dropdown-toggle.btn-blue {
     color: #ffffff;
-    background-color: #3276b1;
-    border-color: #285e8e;
+    background-color: #2980B9;
+    border-color: #2980B9;
   }
 
   .btn-blue:active,
@@ -617,7 +618,7 @@ li a:hover{
   .btn-red {
     color: #ffffff;
     background-color: #E74C3C;
-    border-color: #d43f3a;
+    border-color: #C0392B;
   }
 
   .btn-red:hover,
@@ -626,8 +627,8 @@ li a:hover{
   .btn-red.active,
   .open .dropdown-toggle.btn-red {
     color: #ffffff;
-    background-color: #d2322d;
-    border-color: #ac2925;
+    background-color: #C0392B;
+    border-color: #C0392B;
   }
 
   .btn-red:active,
@@ -756,4 +757,91 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   overflow: hidden;
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
+}
+
+
+
+/********* GENERAL PAGES *********/
+.page.generalpage a:hover {
+  text-decoration:none;
+}
+
+.page.generalpage .row.pagehead {
+  height:330px; 
+  overflow:hidden;
+}
+
+.page.generalpage .row.pagehead img {
+  width:100%; 
+  height:100%;
+}
+
+.page.generalpage .row.pagehead .caption-positioning {
+  position: absolute; 
+  left: 50%;
+}
+
+.page.generalpage .row.pagehead #pagehead-caption {
+  position: relative;
+  left: -50%;
+  text-align:center; 
+  background: rgba(0, 0, 0, 0.75);
+  padding-left:45px;
+  padding-right:45px;
+  min-width:650px;
+  border: solid 1px black;
+  padding-bottom:10px;
+  margin-top:85px;
+}
+
+.page.generalpage .row.pagehead #pagehead-caption h1 {
+  color:#ec602f; 
+  width:100%;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+
+.page.generalpage .row.pagehead #pagehead-caption p{
+  color:white; 
+}
+
+.page.generalpage .row.pagehead #pagehead-caption .glyphicon {
+  color:white;
+}
+
+.page.generalpage .row.pagehead #pagehead-caption h4 {
+  color:white;
+  display:inline;
+  margin-bottom:10px;
+}
+
+@media screen and (max-width: 768px) {
+  .page.generalpage .row.pagehead #pagehead-caption {
+  padding-left:25px;
+  padding-right:25px;
+  min-width:350px;
+  padding-bottom:10px;
+  margin-top:35px;
+}
+
+  .page.generalpage .row.pagehead #pagehead-caption h1 {
+    font-size:40px;
+  }
+}
+
+.page.generalpage .mainfeed{
+  background:white;
+  padding-bottom: 25px;
+  text-align:center;
+}
+
+.page.generalpage .row.content-row{
+  margin-bottom:20px;
+  padding-top:5px;
+}
+
+.page.generalpage .general-description{
+  text-align:;
+  padding-right:5px;
+  font-size:15px;
 }
