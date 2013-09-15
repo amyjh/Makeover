@@ -33,6 +33,18 @@
   line-height: 1;
 }
 
+#indexCarousel .carousel-inner .img-container {
+height: 155%;
+position: absolute;
+left: 50%;
+}
+
+#indexCarousel .carousel-inner .img-container img {
+height: 100%;
+position: relative;
+left: -50%;
+}
+
 #indexCarousel .carousel-inner .search-bar {
   width: 100%;
   margin-left:auto;
