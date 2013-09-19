@@ -9,6 +9,10 @@ html, body {
   background-color: #f0f0f0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .page{
   padding-top: 25px;
   padding-left:5px;
@@ -117,7 +121,7 @@ li a:hover{
 
   .top-nav a.navbar-brand {
     float: left;
-    margin-right: 0px;
+    margin-right: 10px;
     margin-left: 0px;
     padding: 9px 5px;
   }
@@ -844,4 +848,11 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
   text-align:;
   padding-right:5px;
   font-size:15px;
+}
+
+/******* Flash messages ******/
+
+.flash-message {
+  margin-top: 10px;
+  margin-bottom: 0;
 }

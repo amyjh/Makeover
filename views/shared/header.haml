@@ -1,5 +1,5 @@
 .top-nav.hfcontainer
-  .nav#navbar-example.navbar.navbar-static{:role => "navigation"}
+  .nav.navbar.navbar-static{:role => "navigation"}
     .navbar-header
       %button.navbar-toggle{"data-target" => ".bs-js-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
@@ -8,12 +8,14 @@
         %span.icon-bar
       %a.navbar-brand{:href => "/"} 
         %img{:alt => "GoTag Logo", :src => "img/logo-150.png",}/
+        
     .collapse.navbar-collapse.bs-js-navbar-collapse
       %ul.nav.navbar-nav.leftlinks
-        %li.dropdown
+        %li
           %a{:href => "browse", :role => "menuitem", :tabindex => "-1"} Browse
-        %li.dropdown
+        %li
           %a{:href => "#", :role => "menuitem", :tabindex => "-1"} Sell Tickets
+      
       %ul.nav.navbar-nav.navbar-right
         %li#fat-menu.dropdown
           %a#drop3.dropdown-toggle.accountmenu{"data-toggle" => "dropdown", :href => "#", :role => "button"}

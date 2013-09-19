@@ -8,7 +8,7 @@ h2{
 
 
 /*--------------------------------
-	Checkout
+	Purchases
 ---------------------------------*/
 
 #checkout-steps {
@@ -70,4 +70,8 @@ h2{
   margin-top: 20px;
   padding-top: 10px;
   text-align: center;
+}
+
+#checkout-content-wrap .table td {
+   text-align: center;   
 }

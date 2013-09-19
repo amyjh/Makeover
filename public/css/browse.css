@@ -27,6 +27,7 @@
     font-size: 1.1em;
     font-weight:bold;
     color:#555;
+    padding-bottom: 5px;
   }
 
   .page.browsepage .event-tile .date {

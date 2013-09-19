@@ -1,5 +1,10 @@
 %link{ :href => "css/browse.css", :rel => "stylesheet" }/
 
+.container
+  %div{id: "content-header-notice", class: "flash-message alert alert-warning fade in"}
+    %button.close{"data-dismiss" => "alert"} ×
+    Signed in!
+
 .page.browsepage
   .container
     .row    

@@ -33,6 +33,18 @@
   line-height: 1;
 }
 
+#indexCarousel .carousel-inner .img-container {
+  height: 155%;
+  position: absolute;
+  left: 50%;
+}
+
+#indexCarousel .carousel-inner .img-container img {
+  height: 100%;
+  position: relative;
+  left: -50%;
+}
+
 #indexCarousel .carousel-inner .search-bar {
   width: 100%;
   margin-left:auto;
@@ -203,7 +215,7 @@
   height: 64px;
   width: 75px;
   margin: 0;
-  background: url('../img/icon/features.png');
+  background: url("<%= asset_path 'frontend/features.png' %>");
   margin-right:5px;
 }
 
