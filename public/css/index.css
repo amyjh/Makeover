@@ -34,6 +34,7 @@
 }
 
 #indexCarousel .carousel-inner .img-container {
+<<<<<<< HEAD
   height: 155%;
   position: absolute;
   left: 50%;
@@ -43,6 +44,17 @@
   height: 100%;
   position: relative;
   left: -50%;
+=======
+height: 155%;
+position: absolute;
+left: 50%;
+}
+
+#indexCarousel .carousel-inner .img-container img {
+height: 100%;
+position: relative;
+left: -50%;
+>>>>>>> 5c68a1f965edaa5525024cbba80f3a62fd0023ba
 }
 
 #indexCarousel .carousel-inner .search-bar {
