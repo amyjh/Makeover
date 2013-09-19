@@ -1,0 +1,17 @@
+#indexServicewrap a.thumbnail.gldisplay{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+#indexServicewrap a.thumbnail.gldisplay img{
+  height:150px;
+  width:150px;
+  padding:0.5%;
+}
+
+#indexServicewrap a.thumbnail.gldisplay{
+  background-color:red;
+  border:1px solid red;
+}

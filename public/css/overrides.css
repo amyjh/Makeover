@@ -688,6 +688,7 @@ a.thumbnail.gldisplay{
 a.thumbnail.gldisplay img{
   height:100%;
   width:100%;
+  padding-bottom:0px;
 }
 
 a.thumbnail.gsdisplay{
@@ -855,4 +856,8 @@ a.thumbnail.gsdisplay p, a.thumbnail.gldisplay p{
 .flash-message {
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+html[data-useragent*='MSIE 10.0'] {
+  border: 1px solid red;
 }
