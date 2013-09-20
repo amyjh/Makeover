@@ -116,6 +116,14 @@ var BrowserDetect = {
 };
 BrowserDetect.init();
 
+$(document).ready(function() {
+	if (BrowserDetect.browser == 'Explorer') {
+		klass = "ie " + "ie" + BrowserDetect.version;
+		$('body').addClass(klass);
+	}
 
-alert(BrowserDetect.browser);
-alert(BrowserDetect.version);
+	if (BrowserDetect.browser == 'Chrome') {
+		klass = "chrome" + BrowserDetect.version;
+		$('body').addClass(klass);
+	}
+});

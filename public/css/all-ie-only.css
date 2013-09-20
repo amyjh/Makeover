@@ -1,17 +1,42 @@
-#indexServicewrap a.thumbnail.gldisplay{
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
+/********* INDEX **********/
+body.ie #indexServicewrap a.thumbnail.gldisplay{
+  overflow:hidden;
 }
 
-#indexServicewrap a.thumbnail.gldisplay img{
-  height:150px;
-  width:150px;
-  padding:0.5%;
+body.ie #indexServicewrap a.thumbnail.gldisplay img{
+  height:auto;
+  width:100%;
+  padding-bottom:5px;
 }
 
-#indexServicewrap a.thumbnail.gldisplay{
-  background-color:red;
-  border:1px solid red;
+body.ie #indexServicewrap a.thumbnail.gsdisplay{
+  overflow:hidden;
+}
+
+body.ie #indexServicewrap a.thumbnail.gsdisplay img{
+  height:auto;
+  width:100%;
+  margin-bottom:5px;
+}
+
+/********** BROWSE *********/
+body.ie8 .page.browsepage .event-tile.thumbnail img, body.ie7 .page.browsepage .event-tile.thumbnail img{
+  height:auto;
+  width:80%;
+  margin-left:10%;
+}
+
+/********* EVENT PAGE ********/
+body.ie .page.eventspage .leftpane a.thumbnail.flyer{
+  overflow:hidden;
+  width:70%;
+  height:auto;
+  margin-left:15%;
+  padding-bottom:0;
+}
+
+body.ie .page.eventspage .leftpane a.thumbnail.flyer img{
+  height:auto;
+  width:100%;
+  padding-bottom:5px;
 }
